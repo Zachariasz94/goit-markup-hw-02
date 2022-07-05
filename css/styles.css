@@ -1,0 +1,241 @@
+:root {
+    --body-font: font-family: 'Roboto', sans-serif;
+    --dark: #2f303a;
+    --grey: #757575;
+    --FFF: #FFF;
+    --blue: #2196F3;
+    --black: #212121;
+    --button: #F5F4FA;
+    --line: #ECECEC;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+  
+  body {
+    width: 1600px;
+    height: 2349px;
+    font-family: var(--body-font);
+    background-color: var(--FFF);
+    border: 0;
+  }
+  
+  .style {
+    list-style: none;
+  }
+  
+  .decoration {
+    text-decoration: none;
+  }
+  
+  a:focus {
+    color: var(--blue);
+  }
+  
+  a:hover {
+    color: var(--blue);
+  }
+  
+  
+  /* ========= INDEX.HTML ========== */
+  
+  /* ======== HEADER  ========= */
+
+  .nawigation {
+    width: 1600px;
+    height: 80px;
+    display: flex; 
+  }
+
+  .logo {
+    margin-top: 24px;
+    margin-left: 215px;
+    margin-bottom: 25px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.192em;
+    letter-spacing: 0.03em;
+    /* display: inline-block; */
+  }
+
+ /*  kakakaka */
+
+  .first-word {
+    color: var(--blue);
+  }
+  
+  .secound-word {
+    color: var(--black);
+  }
+
+  .first-navigation-list {
+    width: 254px;
+    height: 16px;
+    margin-top: 32px;
+    margin-left: 47px;
+    display: flex;
+  }
+
+  .first-navigation-list-item {
+    padding-left: 46px;
+  }
+  
+  .first-nav-link {
+    color: var(--black);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.142em;
+    letter-spacing: 0.02em;
+  }
+
+  .secound-navigation-list {
+    margin-top: 32px;
+    margin-left: 321px;
+    display: flex;
+
+  }
+
+  .secound-nav-link {
+    color: var(--grey);
+    font-weight: 500;
+    margin-left: 50px;
+  }
+  
+  /* ========= END HEADER ========= */
+  
+  
+  
+  /* ======= ZAPISY ======= */
+
+  .biznes {
+    margin-top: -20px;
+  }
+  
+  .for-biznes {
+    width: 1600px;
+    height: 600px;
+    background-color: var(--dark);
+  }
+  
+  .for-biznes-item {
+    color: var(--FFF);
+  }
+  
+  .button-order {
+    background-color: var(--blue);
+    color: var(--FFF);
+    border-radius: 4px;
+    border: 0;
+    cursor: pointer;
+  }
+  
+  /* =======END ZAPISY ======= */
+  
+  /* ======  CZYM SIĘ ZAJMUJEMY ======= */
+  
+  .lorem {
+    font-weight: 700;
+    line-height: 1.142em;
+    letter-spacing: 0.03em;
+  }
+  
+  .paragraph {
+    line-height: 1.714em;
+    letter-spacing: 0.03em;
+    color: var(--grey);
+  }
+  
+  .work {
+    font-weight: 700;
+    line-height: 1.166em;
+    letter-spacing: 0.03em;
+  }
+  
+  /* ====== END CZYM SIĘ ZAJMUJEMY ======= */
+  
+  /* ========= ZESPÓŁ ========= */
+  
+  .secound-paragraph {
+    line-height: 1.187em;
+    letter-spacing: 0.03em;
+  }
+  
+  /* ========= END ZESPÓŁ ========= */
+  
+  /* ======== FOOTER ========= */
+  
+  .footer {
+    background-color: var(--dark);
+  }
+  
+  .third-word {
+    color: var(--blue);
+  }
+  
+  .fourth-word {
+   color: var(--FFF);
+  }
+  
+  .address-link {
+    color: var(--FFF);
+  }
+  
+  .address-link2 {
+    color: var(--grey);
+  }
+  /* ======== END FOOTER ========= */
+  
+  /* ========= END INDEX.HTML ========== */
+  
+  
+  
+  /* ============================================================================== */
+  
+  
+  
+  
+  
+  /* =============== PORTFOLIO.HTML ============== */
+  
+  .line {
+    border: 1px solid #ECECEC
+  }
+  
+  /* ============ NASZE PROJEKTY ============ */
+  
+  button:hover {
+    background-color: var(--blue);
+    color: var(--FFF);
+  }
+  
+  button:focus {
+    background-color: var(--blue);
+    color: var(--FFF);
+  }
+  
+  .button-portfolio {
+    font-weight: 500;
+    line-height: 1.625em;
+    letter-spacing: 0.03em;
+    background-color: var(--button);
+    border-radius: 4px;
+    border: 0;
+    cursor: pointer;
+    text-align: center;
+  }
+  
+  .project-name {
+    font-weight: 700;
+    line-height: 2em;
+    letter-spacing: 0.06em;
+  }
+  
+  
+  
+  /* ============ END NASZE PROJEKTY ============ */
+  
+  
+  /* =============== PORTFOLIO.HTML ============== */
