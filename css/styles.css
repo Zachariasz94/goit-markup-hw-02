@@ -38,7 +38,10 @@
   a:hover {
     color: var(--blue);
   }
-  
+
+  hr {
+    border: 1px solid #ECECEC
+  }
   
   /* ========= INDEX.HTML ========== */
   
@@ -309,10 +312,7 @@
     margin-top: 9px;
   }
 
- ./* address-child {
-   font-style: normal;
-}
- */
+ 
 
   /* ======== END FOOTER ========= */
   
@@ -327,12 +327,33 @@
   
   
   /* =============== PORTFOLIO.HTML ============== */
-  
-  .line {
-    border: 1px solid #ECECEC
+
+
+  .page2 {
+    width: 1600px;
+    height: 1880px;
   }
   
+  
   /* ============ NASZE PROJEKTY ============ */
+  
+  
+  .contents {
+    width: 1600px;
+    height: 1548px;
+  }
+  
+  .portfolio {
+    width: 1170px;
+    height: 1360px;
+    padding-top: 94px;
+    padding-left: 215px;
+  }
+
+  /* .portfolio-first-list {
+
+  } */
+
   
   button:hover {
     background-color: var(--blue);
@@ -353,8 +374,43 @@
     border: 0;
     cursor: pointer;
     text-align: center;
+    float: left;
+  }
+
+  .botton-list {
+    padding-left: 327px;
+  }
+
+  .button-list-child {
+    padding-left: 8px;
+  }
+
+
+  .button-name {
+    margin: 6px 22px;
+  }
+
+  .our-project-list {
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .our-project-list-child {
+    width: 370px;
+    height: 404px;
+    background: #FFFFFF;
+    border: 1px solid #EEEEEE;
+    
   }
   
+  .portfolio-secound-list {
+    width: 1170px;
+    height: 1288px;
+    padding-bottom: 94px;
+  }
+
+
   .project-name {
     font-weight: 700;
     line-height: 2em;
@@ -366,4 +422,4 @@
   /* ============ END NASZE PROJEKTY ============ */
   
   
-  /* =============== PORTFOLIO.HTML ============== */
+  /* =============== END PORTFOLIO.HTML ============== */
