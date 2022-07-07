@@ -11,6 +11,8 @@
 
   * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
   }
   
   body {
@@ -42,10 +44,10 @@
   
   /* ======== HEADER  ========= */
 
-  .nawigation {
+  .header {
     width: 1600px;
     height: 80px;
-    display: flex; 
+    display: flex;
   }
 
   .logo {
@@ -58,7 +60,7 @@
     font-size: 26px;
     line-height: 1.192em;
     letter-spacing: 0.03em;
-    display: inline-block;
+    /* display: flex; */
   }
 
 
@@ -74,7 +76,7 @@
     width: 254px;
     height: 16px;
     margin-top: 32px;
-    margin-left: 47px;
+    margin-left: 453px;
     display: flex;
   }
 
@@ -83,7 +85,7 @@
   }
   
   .first-nav-link {
-    color: var(--black);
+    color: var(--blue);
     font-weight: 500;
     font-size: 14px;
     line-height: 1.142em;
@@ -92,8 +94,8 @@
 
   .secound-navigation-list {
     margin-top: 32px;
-    margin-left: 321px;
-    display: flex;
+    margin-left: 227px;
+    /* display: flex; */
 
   }
 
@@ -109,9 +111,6 @@
   
   /* ======= ZAPISY ======= */
 
-  .biznes {
-    margin-top: -37px;
-  }
   
   .for-biznes {
     width: 1600px;
@@ -137,10 +136,12 @@
   .button-order {
     width: 200px;
     height: 50px;
+    margin-top: 30px;
     margin-left: 700px;
     margin-bottom: 200px;
     background-color: var(--blue);
     color: var(--FFF);
+    border: 0;
     border-radius: 4px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     cursor: pointer;
@@ -149,6 +150,15 @@
   /* =======END ZAPISY ======= */
   
   /* ======  CZYM SIĘ ZAJMUJEMY ======= */
+  
+  
+  .description {
+    width: 1170px;
+    height: 101px;
+    padding-top: 94px;
+    margin-left: 215px;
+    align-content: space-around;
+  }
   
   .lorem {
     font-weight: 700;
@@ -163,11 +173,40 @@
   }
   
   .work {
+    font-family: 'Roboto';
+    font-style: normal;
     font-weight: 700;
-    line-height: 1.166em;
+    font-size: 36px;
+    padding-top: 94px;
+    margin-left: 624px;
+    margin-bottom: 50px;
+    line-height: 1.666em;
     letter-spacing: 0.03em;
+    color: var(--black);
   }
-  
+
+  .work-image {
+    width: 1170px;
+    height: 386px;
+    margin-top: 94px;
+  }
+
+  .img-work-size {
+    width: 370px;
+    height: 294px;
+  }
+
+
+  .secound-work-list {
+    position: absolute;
+    display: flex;
+    margin-left: 185px;
+    align-items: center;
+  }
+
+  .secound-work-list-child/* :not(first-child) */ {
+    margin-left: 30px;
+  }
   /* ====== END CZYM SIĘ ZAJMUJEMY ======= */
   
   /* ========= ZESPÓŁ ========= */
@@ -178,59 +217,15 @@
     background-color: var(--FFF);
   }
 
-  .description {
-    width: 1170px;
-    height: 101px;
-    padding-top: 94px;
-    margin-left: 215px;
-    align-content: space-around;
-  }
 
   .first-work-list {
+    /* margin-left: 215px; */
     display: flex;
-    padding: 0;
-  }
-
-  .first-work-list-item {
-    
-  }
-
-  .first-work-list-child {
-
   }
 
   .secound-paragraph {
     line-height: 1.187em;
     letter-spacing: 0.03em;
-  }
-  
-  .work-image {
-    width: 1170px;
-    height: 386px;
-    margin-top: 94px;
-  }
-
-  .work {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 36px;
-    margin-left: 624px;
-    line-height: 1.666em;
-    letter-spacing: 0.03em;
-    color: var(--black);
-  }
-
-  .img-work-size {
-    width: 370px;
-    height: 294px;
-  }
-
-  .secound-work-list {
-    position: absolute;
-    display: flex;
-    padding-left: 185px;
-    align-items: center;
   }
 
   .team {
