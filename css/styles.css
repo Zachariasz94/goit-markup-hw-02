@@ -164,6 +164,7 @@ hr {
 }
 
 .paragraph {
+  font-size: 14px;
   line-height: 1.714em;
   letter-spacing: 0.03em;
   color: var(--grey);
@@ -246,6 +247,11 @@ hr {
   line-height: 1.187em;
   letter-spacing: 0.03em;
   color: var(--grey);
+}
+
+.img-html {
+  width: 270px;
+  height: 260px;
 }
 
 .team-list-item {
@@ -394,7 +400,6 @@ button:focus {
   letter-spacing: 0.06em;
   padding-top: 20px;
   padding-left: 24px;
-  font-family: ;
 }
 
 .project-paragraph {
