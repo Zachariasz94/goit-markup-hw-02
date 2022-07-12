@@ -96,13 +96,16 @@ hr {
 
 .secound-navigation-list {
   padding-top: 32px;
-  margin-left: 309px;
+  margin-left: 333px;
   display: flex;
 }
 
 .secound-nav-link {
   color: var(--grey);
   font-weight: 500;
+  font-size: 14px;
+  line-height: 1.142em;
+  letter-spacing: 0.02em;
   margin-left: 50px;
 }
 
