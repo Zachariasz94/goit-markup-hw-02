@@ -39,6 +39,12 @@ a:hover {
   color: var(--blue);
 }
 
+.container {
+  width: 1200px;
+  margin: auto;
+  padding: 0, 15px;
+}
+
 hr {
   border: 1px solid #ececec;
 }
@@ -338,7 +344,6 @@ address {
   width: 1170px;
   height: 1360px;
   padding-top: 94px;
-  padding-left: 215px;
 }
 
 .portfolio-first-list {
