@@ -16,8 +16,8 @@
 }
 
 body {
-  width: 1600px;
-  height: 2349px;
+  /* width: 1600px;
+  height: 2349px; */
   font-family: var(--body-font);
   background-color: var(--FFF);
   border: 0;
@@ -45,7 +45,13 @@ a:hover {
   padding: 0, 15px;
 }
 
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 hr {
+  width: 1600px;
   border: 1px solid #ececec;
 }
 
@@ -83,8 +89,8 @@ hr {
 .first-navigation-list {
   width: 254px;
   height: 16px;
-  margin-top: 32px;
-  margin-left: 453px;
+  padding-top: 32px;
+  padding-left: 93px;
   display: flex;
 }
 
@@ -102,7 +108,7 @@ hr {
 
 .secound-navigation-list {
   padding-top: 32px;
-  margin-left: 333px;
+  padding-left: 424px;
   display: flex;
 }
 
@@ -133,7 +139,7 @@ hr {
   line-height: 1.363em;
   text-align: center;
   letter-spacing: 0.06em;
-  padding-top: 200px;
+  padding-top: 106px;
   padding-left: 452px;
   padding-right: 452px;
   text-transform: uppercase;
@@ -195,7 +201,6 @@ hr {
 .first-work-list {
   width: 1170px;
   height: 101px;
-  padding-top: 94px;
   margin-left: 215px;
   align-content: space-around;
   gap: 30px;
@@ -210,7 +215,6 @@ hr {
 .work-image {
   width: 1170px;
   height: 386px;
-  margin-top: 94px;
 }
 
 .img-work-size {
@@ -239,7 +243,6 @@ hr {
   font-style: normal;
   font-weight: 700;
   font-size: 36px;
-  padding-top: 94px;
   padding-left: 695px;
   line-height: 1.666em;
   letter-spacing: 0.03em;
@@ -328,10 +331,10 @@ address {
 
 /* =============== PORTFOLIO.HTML ============== */
 
-.page2 {
+/* .page2 {
   width: 1600px;
   height: 1880px;
-}
+} */
 
 /* ============ NASZE PROJEKTY ============ */
 
