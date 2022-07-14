@@ -16,8 +16,6 @@
 }
 
 body {
-  /* width: 1600px;
-  height: 2349px; */
   font-family: var(--body-font);
   background-color: var(--FFF);
   border: 0;
@@ -50,11 +48,6 @@ a:hover {
   padding-bottom: 94px;
 }
 
-hr {
-  width: 1600px;
-  border: 1px solid #ececec;
-}
-
 /* ========= INDEX.HTML ========== */
 
 /* ======== HEADER  ========= */
@@ -63,12 +56,13 @@ hr {
   width: 1600px;
   height: 80px;
   display: flex;
+  border-bottom: 1px solid #ECECEC;
 }
 
 .logo {
-  padding-top: 24px;
-  padding-left: 215px;
-  padding-bottom: 25px;
+  margin-top: 24px;
+  margin-left: 215px;
+  margin-bottom: 25px;
   font-family: 'Raleway';
   font-style: normal;
   font-weight: 700;
@@ -108,7 +102,7 @@ hr {
 
 .secound-navigation-list {
   padding-top: 32px;
-  padding-left: 424px;
+  margin-left: 426px;
   display: flex;
 }
 
@@ -297,8 +291,7 @@ hr {
 }
 
 .secound-logo {
-  padding-top: 60px;
-  padding-bottom: 0;
+  margin-top: 60px;
 }
 
 .third-word {
