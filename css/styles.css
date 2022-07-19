@@ -436,6 +436,11 @@ address {
   margin-top: 9px;
 }
 
+.footer-social-position {
+  position: relative;
+  top: -137px;
+}
+
 .join-to-as {
   font-family: 'Roboto';
   font-style: normal;
@@ -449,7 +454,9 @@ address {
 
 .footer-social-media-list {
   display: flex;
-  /* padding-left: 531px; */
+  position: relative;
+  top: 19px;
+  left: -168px;
   gap:10px;
   align-items: center;
   justify-content: center;
@@ -542,6 +549,15 @@ button:focus {
   height: 404px;
   background: #ffffff;
   border: 1px solid #eeeeee;
+}
+
+.our-project-list-child:hover {
+  background: #FFFFFF;
+border: 1px solid #EEEEEE;
+box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+0px 4px 4px rgba(0, 0, 0, 0.06),
+1px 4px 6px rgba(0, 0, 0, 0.16);
+cursor: pointer;
 }
 
 .portfolio-secound-list {
