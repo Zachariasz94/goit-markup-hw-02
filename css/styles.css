@@ -326,7 +326,6 @@ a:hover {
   gap:10px;
   align-items: center;
   justify-content: center;
- /*  justify-content: space-around; */
 }
 
 
@@ -343,7 +342,6 @@ a:hover {
   cursor: pointer;
   background: #FFFFFF;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  /* color: #2196f3; */
 }
 
 .team-social-box:hover {
@@ -399,7 +397,7 @@ a:hover {
  }
 
  .box-logo:hover {
-  color: var(--blue);
+  border-color: var(--blue);
  }
 
 /* ========= End Nasi Klienci ========== */
@@ -438,6 +436,43 @@ address {
   margin-top: 9px;
 }
 
+.join-to-as {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  padding-left: 531px;
+  line-height: 1.666em;
+  letter-spacing: 0.03em;
+  color: var(--FFF);
+}
+
+.footer-social-media-list {
+  display: flex;
+  /* padding-left: 531px; */
+  gap:10px;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-social-media-list-item {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.footer-social-media-list-item:hover {
+  background: var(--blue);
+}
+
+.footer-social {
+  fill: var(--FFF);
+}
+
 /* ======== END FOOTER ========= */
 
 /* ========= END INDEX.HTML ========== */
@@ -445,11 +480,6 @@ address {
 /* ============================================================================== */
 
 /* =============== PORTFOLIO.HTML ============== */
-
-/* .page2 {
-  width: 1600px;
-  height: 1880px;
-} */
 
 /* ============ NASZE PROJEKTY ============ */
 
