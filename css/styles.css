@@ -40,7 +40,7 @@ a:hover {
 .container {
   width: 1200px;
   margin: auto;
-  padding: 0, 15px;
+  padding: 0 15px;
 }
 
 .section {
@@ -53,15 +53,18 @@ a:hover {
 /* ======== HEADER  ========= */
 
 .header {
-  width: 1600px;
   height: 80px;
-  display: flex;
   border-bottom: 1px solid #ececec;
+}
+
+.header-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .logo {
   margin-top: 24px;
-  margin-left: 215px;
   margin-bottom: 25px;
   font-family: 'Raleway';
   font-style: normal;
@@ -101,8 +104,6 @@ a:hover {
 }
 
 .secound-navigation-list {
-  padding-top: 32px;
-  margin-left: 426px;
   display: flex;
 }
 
@@ -180,9 +181,7 @@ a:hover {
 /* ======  CZYM SIĘ ZAJMUJEMY ======= */
 
 .our-work {
-  width: 1600px;
   height: 919px;
-  background-color: var(--FFF);
 }
 
 .lorem {
@@ -206,7 +205,7 @@ a:hover {
   font-weight: 700;
   font-size: 36px;
   padding-top: 94px;
-  margin-left: 624px;
+  text-align: center;
   margin-bottom: 50px;
   line-height: 1.666em;
   letter-spacing: 0.03em;
@@ -216,7 +215,6 @@ a:hover {
 .first-work-list {
   width: 1170px;
   height: 101px;
-  margin-left: 215px;
   align-content: space-around;
   gap: 30px;
   display: flex;
@@ -241,8 +239,8 @@ a:hover {
 .secound-work-list {
   display: flex;
   gap: 30px;
-  margin-left: 215px;
 }
+ 
 
 .icon-work {
   display: flex;
@@ -268,7 +266,6 @@ a:hover {
 /* ========= ZESPÓŁ ========= */
 
 .team {
-  width: 1600px;
   height: 708px;
   background-color: var(--button);
 }
@@ -278,16 +275,19 @@ a:hover {
   font-style: normal;
   font-weight: 700;
   font-size: 36px;
-  padding-left: 695px;
+  text-align: center;
   line-height: 1.666em;
   letter-spacing: 0.03em;
   color: var(--black);
 }
 
 .team-list {
-  padding-left: 185px;
   margin-top: 50px;
   display: flex;
+}
+
+.team-list-item:first-child {
+  margin-left: 0;
 }
 
 .secound-paragraph {
@@ -363,7 +363,7 @@ a:hover {
 .our-customers {
   display: flex;
   margin-top: 50px;
-  gap: 33px;
+  gap: 30px;
 }
 
 .our-customers-font {
@@ -371,7 +371,7 @@ a:hover {
   font-style: normal;
   font-weight: 700;
   font-size: 36px;
-  padding-left: 504px;
+  text-align: center;
   line-height: 1.666em;
   letter-spacing: 0.03em;
   color: var(--black);
@@ -396,7 +396,7 @@ a:hover {
   fill:  #AFB1B8;
  }
 
- .box-logo:hover {
+ .box-logo:hover .icon-customer{
   border-color: var(--blue);
  }
 
@@ -405,13 +405,11 @@ a:hover {
 /* ======== FOOTER ========= */
 
 .footer {
-  width: 1600px;
-  height: 252px;
   background-color: var(--dark);
 }
 
 .secound-logo {
-  margin-top: 60px;
+  padding-top: 60px;
 }
 
 .third-word {
@@ -425,7 +423,10 @@ a:hover {
 address {
   font-style: normal;
   padding-top: 111px;
-  padding-left: 215px;
+}
+
+.address-list {
+  margin-top: 30px;
 }
 
 .address-link {
@@ -437,8 +438,7 @@ address {
 }
 
 .footer-social-position {
-  position: relative;
-  top: -137px;
+  margin-left: 70px;
 }
 
 .join-to-as {
@@ -446,7 +446,7 @@ address {
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
-  padding-left: 531px;
+  margin-top: 26px;
   line-height: 1.666em;
   letter-spacing: 0.03em;
   color: var(--FFF);
@@ -456,7 +456,6 @@ address {
   display: flex;
   position: relative;
   top: 19px;
-  left: -168px;
   gap:10px;
   align-items: center;
   justify-content: center;
@@ -478,6 +477,11 @@ address {
 
 .footer-social {
   fill: var(--FFF);
+}
+
+.footer-display {
+  display: flex;
+  align-items: center;
 }
 
 /* ======== END FOOTER ========= */
