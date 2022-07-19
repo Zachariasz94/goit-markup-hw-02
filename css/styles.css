@@ -56,7 +56,7 @@ a:hover {
   width: 1600px;
   height: 80px;
   display: flex;
-  border-bottom: 1px solid #ECECEC;
+  border-bottom: 1px solid #ececec;
 }
 
 .logo {
@@ -112,7 +112,23 @@ a:hover {
   font-size: 14px;
   line-height: 1.142em;
   letter-spacing: 0.02em;
-  margin-left: 50px;
+  margin-left: 27px;
+  display: flex;
+}
+
+.nav-icon {
+  display: flex;
+  padding-right: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  fill: currentColor;
 }
 
 /* ========= END HEADER ========= */
@@ -122,7 +138,11 @@ a:hover {
 .for-biznes {
   width: 1600px;
   height: 600px;
-  background-color: var(--dark);
+  /* background-color: var(--dark); */
+  position: relative;
+  background-image: url('/images/background/background.jpg');
+  box-shadow: inset 50px 50px 50px 50px rgba(47, 48, 58, 0.4),
+    inset 1600px 600px 50px 50px rgba(47, 48, 58, 0.4);
 }
 
 .for-biznes-item {
@@ -160,7 +180,7 @@ a:hover {
 
 .our-work {
   width: 1600px;
-  height: 769px;
+  height: 919px;
   background-color: var(--FFF);
 }
 
@@ -209,6 +229,7 @@ a:hover {
 .work-image {
   width: 1170px;
   height: 386px;
+  margin-top: 130px;
 }
 
 .img-work-size {
@@ -222,13 +243,32 @@ a:hover {
   margin-left: 215px;
 }
 
+.icon-work {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 270px;
+  height: 120px;
+  background: #F5F4FA;
+  border-radius: 4px;
+  margin-bottom: 30px;
+}
+
+.icon-antenna,
+.icon-clock,
+.icon-diagram,
+.icon-astronaut {
+  width: 70px;
+  height: 70px;
+}
+
 /* ====== END CZYM SIĘ ZAJMUJEMY ======= */
 
 /* ========= ZESPÓŁ ========= */
 
 .team {
   width: 1600px;
-  height: 648px;
+  height: 708px;
   background-color: var(--button);
 }
 
@@ -262,7 +302,6 @@ a:hover {
 
 .team-list-item {
   width: 270px;
-  height: 368px;
   margin-left: 30px;
   text-align: center;
   background-color: var(--FFF);
@@ -279,6 +318,33 @@ a:hover {
   margin-bottom: 10px;
   padding-top: 30px;
 }
+
+.team-social-media {
+  display: flex;
+  list-style: none;
+  gap:10px;
+  align-items: center;
+  justify-content: center;
+ /*  justify-content: space-around; */
+}
+
+
+.team-social-box {
+  width: 44px;
+  height: 44px;
+  margin-top: 16px;
+  margin-bottom: 30px;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.team-social-box:hover {
+  background-color: var(--blue);
+  fill: var(--FFF);
+}
+
 
 /* ========= END ZESPÓŁ ========= */
 
