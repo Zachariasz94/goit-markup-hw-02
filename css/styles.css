@@ -129,6 +129,7 @@ a:hover {
   height: 1em;
   stroke-width: 0;
   fill: currentColor;
+  stroke: currentColor;
 }
 
 /* ========= END HEADER ========= */
@@ -330,6 +331,7 @@ a:hover {
 
 
 .team-social-box {
+  display: flex;
   width: 44px;
   height: 44px;
   margin-top: 16px;
@@ -338,15 +340,74 @@ a:hover {
   align-items: center;
   justify-content: center;
   gap: 10px;
+  cursor: pointer;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  /* color: #2196f3; */
 }
 
 .team-social-box:hover {
   background-color: var(--blue);
-  fill: var(--FFF);
 }
 
+/* .team-social-box .icon:hover {
+  fill: var(--FFF);
+}
+ */
+
+ .social-link {
+  fill: #afb1b8;
+ }
+
+ .social-link:hover {
+  fill: var(--FFF);
+ }
 
 /* ========= END ZESPÓŁ ========= */
+
+/* ========= Nasi klieci ======== */
+
+.our-customers {
+  display: flex;
+  margin-top: 50px;
+  gap: 33px;
+}
+
+.our-customers-font {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  padding-left: 504px;
+  line-height: 1.666em;
+  letter-spacing: 0.03em;
+  color: var(--black);
+ }
+
+ .icon-customer {
+  width: 106px;
+  height: 60px;
+  fill: #afb1b8;
+ }
+
+ .icon-customer:hover {
+  fill: var(--blue);
+ }
+
+ .box-logo {
+  width: 170px;
+  height: 92px;
+  border: 1px solid #AFB1B8;
+  border-radius: 4px;
+  padding: 16px 32px 16px 32px;
+  fill:  #AFB1B8;
+ }
+
+ .box-logo:hover {
+  color: var(--blue);
+ }
+
+/* ========= End Nasi Klienci ========== */
 
 /* ======== FOOTER ========= */
 
