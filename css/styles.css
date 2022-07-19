@@ -350,18 +350,13 @@ a:hover {
   background-color: var(--blue);
 }
 
-/* .team-social-box .icon:hover {
+.team-social-box:hover .icon {
   fill: var(--FFF);
 }
- */
 
- .social-link {
+.social-link {
   fill: #afb1b8;
- }
-
- .social-link:hover {
-  fill: var(--FFF);
- }
+}
 
 /* ========= END ZESPÓŁ ========= */
 
