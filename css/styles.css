@@ -31,10 +31,14 @@ body {
 
 a:focus {
   color: var(--blue);
+  transition: background 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 a:hover {
   color: var(--blue);
+  transition: background 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .container {
@@ -101,6 +105,32 @@ a:hover {
   font-size: 14px;
   line-height: 1.142em;
   letter-spacing: 0.02em;
+}
+
+.active::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 49px;
+  left: 600px;
+  right: 0;
+  top: 76px;
+  background: var(--blue);
+  height: 4px;
+  border-radius: 10px 10px 10px 10px;
+}
+
+.active2::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 49px;
+  left: 600px;
+  right: 0;
+  top: 76px;
+  background: var(--blue);
+  height: 4px;
+  border-radius: 10px 10px 10px 10px;
 }
 
 .secound-navigation-list {
@@ -176,6 +206,50 @@ a:hover {
   cursor: pointer;
 }
 
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+  background-color: rgba(0, 0, 0, 0.2);
+  transition: opacity 250ms, visibility 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.modal-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 528px;
+  height: 581px;
+  transform: translate(-50%, -50%);
+  background-color: var(--FFF);
+  box-shadow: 0px 1px 3px rgb(0 0 0 / 12%),
+  0px 1px 1px rgb(0 0 0 / 14%),
+  0px 2px 1px rgb(0 0 0 / 20%);
+  border-radius: 4px;
+}
+
+.modal-exit {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 30px;
+  height: 30px;
+  background-color: var(--white-color);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
 /* =======END ZAPISY ======= */
 
 /* ======  CZYM SIĘ ZAJMUJEMY ======= */
@@ -210,6 +284,23 @@ a:hover {
   line-height: 1.666em;
   letter-spacing: 0.03em;
   color: var(--black);
+}
+
+.secound-work-list-child {
+  position: absolute;
+  display: flex;
+  width: 370px;
+  height: 70px;
+  top: 1434px;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--FFF);
+  background: rgba(47, 48, 58, 0.8);
 }
 
 .first-work-list {
@@ -306,8 +397,9 @@ a:hover {
   margin-left: 30px;
   text-align: center;
   background-color: var(--FFF);
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+  0px 1px 1px rgba(0, 0, 0, 0.14),
+  0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
 
@@ -344,12 +436,23 @@ a:hover {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.team-social-box:hover {
+.team-social-box:hover,
+.team-social-box:focus {
   background-color: var(--blue);
+  transition: background 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .team-social-box:hover .icon {
   fill: var(--FFF);
+  transition: background 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.team-social-box:focus .icon {
+  fill: var(--FFF);
+  transition: background 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-link {
@@ -385,6 +488,12 @@ a:hover {
 
  .icon-customer:hover {
   fill: var(--blue);
+  transition: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+ }
+
+ .icon-customer:focus {
+  fill: var(--blue);
  }
 
  .box-logo {
@@ -396,7 +505,13 @@ a:hover {
   fill:  #AFB1B8;
  }
 
- .box-logo:hover .icon-customer{
+ .box-logo:hover {
+  border-color: var(--blue);
+  transition: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+ }
+
+ .box-logo:focus {
   border-color: var(--blue);
  }
 
@@ -405,11 +520,12 @@ a:hover {
 /* ======== FOOTER ========= */
 
 .footer {
+  height: 256px;
   background-color: var(--dark);
 }
 
 .secound-logo {
-  padding-top: 60px;
+  margin-top: 84px;
 }
 
 .third-word {
@@ -471,8 +587,11 @@ address {
   background: rgba(255, 255, 255, 0.1);
 }
 
-.footer-social-media-list-item:hover {
+.footer-social-media-list-item:hover,
+.footer-social-media-list-item:focus {
   background: var(--blue);
+  transition: background 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-social {
@@ -511,11 +630,15 @@ address {
 button:hover {
   background-color: var(--blue);
   color: var(--FFF);
+  transition: background 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 button:focus {
   background-color: var(--blue);
   color: var(--FFF);
+  transition: background 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button-portfolio {
@@ -523,8 +646,9 @@ button:focus {
   line-height: 1.625em;
   letter-spacing: 0.03em;
   background-color: var(--button);
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+  0px 1px 2px rgba(0, 0, 0, 0.08),
+  0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
   border: 0;
   cursor: pointer;
@@ -554,14 +678,43 @@ button:focus {
   border: 1px solid #eeeeee;
 }
 
-.our-project-list-child:hover {
-  background: #FFFFFF;
-border: 1px solid #EEEEEE;
-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
-0px 4px 4px rgba(0, 0, 0, 0.06),
-1px 4px 6px rgba(0, 0, 0, 0.16);
-cursor: pointer;
+.our-project-list-child:hover,
+.our-project-list-child:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+  0px 4px 4px rgba(0, 0, 0, 0.06),
+  1px 4px 6px rgba(0, 0, 0, 0.16);
+  cursor: pointer;
+  transition: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+/* .portfolio-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: translateY(100%);
+  padding-top: 49px;
+  padding-left: 24px;
+} */
+
+/* .portfolio-overlay-text {
+  font-size: 18px;
+  line-height: 1.55;
+  letter-spacing: 0.03em;
+  color: var(--white-color);
+} */
+
+/* .portfolio-text-card {
+  border-bottom: 1px solid var(--border);
+  border-left: 1px solid var(--border);
+  border-right: 1px solid var(--border);
+  overflow: hidden;
+  position: relative;
+  height: 110px;
+  background-color: var(--white-color);
+} */
 
 .portfolio-secound-list {
   width: 1170px;
