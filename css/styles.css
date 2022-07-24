@@ -109,29 +109,21 @@ a:hover {
 }
 
 .active::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  width: 49px;
-  left: 600px;
-  right: 0;
-  top: 76px;
-  background: var(--blue);
+  display: block;
   height: 4px;
-  border-radius: 10px 10px 10px 10px;
+  margin-top: 25px;
+  background-color: var(--blue);
+  border-radius: 2px;
+  content: '';
 }
 
 .active2::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  width: 49px;
-  left: 600px;
-  right: 0;
-  top: 76px;
-  background: var(--blue);
+  display: block;
   height: 4px;
-  border-radius: 10px 10px 10px 10px;
+  margin-top: 25px;
+  background-color: var(--blue);
+  border-radius: 2px;
+  content: '';
 }
 
 .secound-navigation-list {
@@ -692,14 +684,13 @@ button:focus {
 .box {
   position: relative;
   width: 370px;
-  height: 281px;
+  height: 279px;
   left: auto;
   top: auto;
   overflow: hidden;
 }
 
 .overlay {
-  position: relative;
   top: 0;
   left: 0;
   width: 100%;
@@ -714,8 +705,8 @@ button:focus {
   padding: 49px 45px 49px 24px;
   font-size: 18px;
   line-height: 1.333;
+  letter-spacing: 0.03em;
   color: var(--FFF);
-  text-align: start;
 }
 
 .box:hover .overlay {
@@ -729,7 +720,7 @@ button:focus {
 }
 
 .photo {
-  margin-top: -297px;
+  margin-top: -280px;
 }
 
 .project-name {
