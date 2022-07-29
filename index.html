@@ -83,6 +83,40 @@
           <div class="modal-backdrop is-hidden" data-modal>
             <div class="modal-content">
               <button class="modal-exit" data-modal-close>X</button>
+              <form>
+                <label>
+                  <span class="modal-header">Zostaw swoje dane w formularzu poniżej</span>
+                </label>
+
+                <label class="modal-block-position">
+                  <span class="label-style">Imie</span>
+                  <input class="input" type="text" name="imie" autofocus required  />
+                </label>
+
+                <label class="modal-block-position">
+                  <span class="label-style">Telefon</span>
+                  <input  class="input" type="tel" name="telefon" required />
+                </label>
+
+                <label class="modal-block-position">
+                  <span class="label-style">E-mail</span>
+                  <input  class="input" type="email" name="email" required />
+                </label>
+
+                <label class="modal-block-position">
+                  <span class="label-style">Komentarz</span>
+                  <textarea class="comments placeholder" name="komentarz" placeholder="Wprowadź tekst"></textarea>
+                </label>
+
+                <label class="clause">
+                  <input type="checkbox" name="klauzula" />
+                  <span class="clause-style">Oświadczam iż akceptuję <a class="clause-link" href="#">Regulamin</a> i <a class="clause-link" href="#">Politykę Prywatności</a>.</span>
+                </label>
+
+                <div class="submit">
+                  <button class="btn-submit" type="submit">Wyślij</button>
+                </div>
+              </form>
             </div>
           </div>
         </div>

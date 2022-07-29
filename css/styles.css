@@ -32,15 +32,16 @@ body {
 
 a:focus {
   color: var(--blue);
-  transition: background 250ms;
+  transition: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 a:hover {
   color: var(--blue);
-  transition: background 250ms;
+  transition: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 
 .container {
   width: 1200px;
@@ -101,6 +102,8 @@ a:hover {
   line-height: 1.142em;
   letter-spacing: 0.02em;
   position: relative;
+  transition: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .active::after {
@@ -189,6 +192,8 @@ a:hover {
   cursor: pointer;
 }
 
+/* ================ MODAL ============= */
+
 .modal-backdrop {
   position: fixed;
   top: 0;
@@ -231,7 +236,125 @@ a:hover {
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   cursor: pointer;
+  transition: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+.modal-header {
+  font-family: Roboto;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.15em;
+  letter-spacing: 0.03em;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  padding-top: 40px;
+}
+
+.modal-block-position {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 40px 0 40px;
+}
+
+.input {
+  height: 40px;
+  width: 448px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+}
+
+.input:placeholder-shown {
+  border-color: var(--blue);
+}
+
+
+.input:hover {
+  border-color: var(--blue);
+}
+
+.input:focus {
+  border-color: var(--blue);
+}
+
+.comments {
+  width: 448px;
+  height: 120px;
+  resize: none;
+}
+
+.comments::placeholder {
+  color: rgba(117, 117, 117, 0.5);
+}
+
+.comments:not(:placeholder-shown) {
+  border-color: var(--blue);
+}
+
+.comments:hover {
+  border-color: var(--blue);
+}
+
+.placeholder {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.166em;
+  letter-spacing: 0.01em;
+  padding: 12px 16px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+}
+
+.label-style {
+  font-family: Roboto;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14px;
+  letter-spacing: 0.01em;
+  text-align: left;
+  padding-bottom: 4px;
+}
+
+.clause {
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.714em;
+  letter-spacing: 0.03em;
+}
+
+.clause-style {
+  padding-left: 9px;
+}
+
+.clause-link:visited {
+  color: var(--blue);
+}
+
+.submit {
+  display: flex;
+  justify-content: center;
+  padding-top: 40px;
+}
+
+.btn-submit {
+  width: 200px;
+  height: 50px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.875em;
+  letter-spacing: 0.06em;
+  background-color: var(--blue);
+  color: var(--FFF);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: none;
+}
+
+/* ================ END MODAL ============= */
 
 /* =======END ZAPISY ======= */
 
@@ -254,6 +377,8 @@ a:hover {
   line-height: 1.714em;
   letter-spacing: 0.03em;
   color: var(--grey);
+  transition: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .work {
@@ -398,7 +523,7 @@ a:hover {
 .team-social-media {
   display: flex;
   list-style: none;
-  gap:10px;
+  gap: 10px;
   align-items: center;
   justify-content: center;
 }
@@ -417,12 +542,14 @@ a:hover {
   cursor: pointer;
   background: #FFFFFF;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  transition: background 250ms, fill 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .team-social-box:hover,
 .team-social-box:focus {
   background-color: var(--blue);
-  transition: background 250ms;
+  transition: background 250ms, fill 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -440,6 +567,8 @@ a:hover {
 
 .social-link {
   fill: #afb1b8;
+  transition: background 250ms, fill 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* ========= END ZESPÓŁ ========= */
@@ -461,22 +590,28 @@ a:hover {
   line-height: 1.666em;
   letter-spacing: 0.03em;
   color: var(--black);
+  transition: background 250ms, fill 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
  }
 
  .icon-customer {
   width: 106px;
   height: 60px;
   fill: #afb1b8;
+  transition: background 250ms, fill 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
  }
 
  .icon-customer:hover {
   fill: var(--blue);
-  transition: 250ms;
+  transition: background 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
  }
 
  .icon-customer:focus {
   fill: var(--blue);
+  transition: background 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
  }
 
  .box-logo {
@@ -486,6 +621,8 @@ a:hover {
   border-radius: 4px;
   padding: 16px 32px 16px 32px;
   fill:  #AFB1B8;
+  transition: background 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
  }
 
  .box-logo:hover {
@@ -496,6 +633,8 @@ a:hover {
 
  .box-logo:focus {
   border-color: var(--blue);
+  transition: background 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
  }
 
 /* ========= End Nasi Klienci ========== */
@@ -531,6 +670,8 @@ address {
 
 .address-link {
   color: var(--FFF);
+  transition: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .address-list-item {
@@ -569,6 +710,8 @@ address {
   align-items: center;
   justify-content: center;
   background: rgba(255, 255, 255, 0.1);
+  transition: background 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-social-media-list-item:hover,
@@ -580,6 +723,8 @@ address {
 
 .footer-social {
   fill: var(--FFF);
+  transition: background 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-display {
@@ -637,6 +782,8 @@ button:focus {
   border: 0;
   cursor: pointer;
   text-align: center;
+  transition: 250ms; fill: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button-name {
@@ -647,6 +794,7 @@ button:focus {
   display: flex;
   gap: 8px;
 }
+
 
 .our-project-list {
   margin-top: 84px;
@@ -660,6 +808,8 @@ button:focus {
   height: 404px;
   background: #ffffff;
   border: 1px solid #eeeeee;
+  transition: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .our-project-list-child:hover,
