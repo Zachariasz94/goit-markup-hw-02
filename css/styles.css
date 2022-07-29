@@ -256,7 +256,7 @@ a:hover {
 .modal-block-position {
   display: flex;
   flex-direction: column;
-  padding: 10px 40px 0 40px;
+  margin: 10px 40px 0px 40px;
 }
 
 .input {
@@ -319,16 +319,16 @@ a:hover {
 
 .clause {
   display: flex;
-  justify-content: center;
-  padding-top: 20px;
+  margin-top: 20px;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.714em;
   letter-spacing: 0.03em;
+  justify-content: center;
 }
 
 .clause-style {
-  padding-left: 9px;
+  margin-left: 9px;
 }
 
 .clause-link:visited {
