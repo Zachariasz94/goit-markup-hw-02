@@ -309,6 +309,24 @@ a:hover {
   border-radius: 4px;
 }
 
+.icon-person {
+  position: absolute;
+  top: 102px;
+  left: 50px;
+}
+
+.icon-phone {
+position: absolute;
+top: 173px;
+left: 50px;
+}
+
+.icon-email2 {
+position: absolute;
+top: 241px;
+left: 50px;
+}
+
 .label-style {
   font-family: Roboto;
   font-size: 12px;
