@@ -157,7 +157,6 @@ a:hover {
 .for-biznes {
   width: 1600px;
   height: 600px;
-  /* background-color: var(--dark); */
   position: relative;
   background-image: url('../images/background/background.jpg');
   box-shadow: inset 50px 50px 50px 50px rgba(47, 48, 58, 0.4),
@@ -190,8 +189,26 @@ a:hover {
   border: 0;
   border-radius: 4px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  cursor: pointer;
+  transition: 250ms;
 }
+
+.button-order:hover {
+  transform: scale(1.2);
+  box-shadow: 0px 3px 1px rgb(0 0 0 / 10%), 0px 1px 2px rgb(0 0 0 / 8%), 0px 2px 2px rgb(0 0 0 / 12%);
+  border-radius: 18px;
+  font-size: 20px;
+  transition: 250ms;
+}
+
+.button-order:focus {
+  transform: scale(1.2);
+  box-shadow: 0px 3px 1px rgb(0 0 0 / 10%), 0px 1px 2px rgb(0 0 0 / 8%), 0px 2px 2px rgb(0 0 0 / 12%);
+  border-radius: 18px;
+  font-size: 20px;
+  transition: 250ms;
+}
+
+
 
 /* ================ MODAL ============= */
 
@@ -267,6 +284,7 @@ a:hover {
   padding-left: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
+  transition: 250ms;
 }
 
 .input:placeholder-shown {
@@ -317,21 +335,22 @@ input {
   width: 448px;
   height: 120px;
   resize: none;
+  transition: 250ms;
 }
 
 .comments::placeholder {
   color: rgba(117, 117, 117, 0.5);
+  transition: 250ms;
 }
 
 .comments:not(:placeholder-shown) {
   border-color: var(--blue);
+  transition: 250ms;
 }
 
 .comments:hover {
   border-color: var(--blue);
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-property: outline-color, fill;
+  transition: 250ms;
 }
 
 .placeholder {
@@ -342,24 +361,28 @@ input {
   padding: 12px 16px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
+  transition: 250ms;
 }
 
 .icon-person {
   position: absolute;
   top: 102px;
   left: 53px;
+  transition: 250ms;
 }
 
 .icon-phone {
 position: absolute;
 top: 171px;
 left: 53px;
+transition: 250ms;
 }
 
 .icon-email2 {
 position: absolute;
 top: 239px;
 left: 53px;
+transition: 250ms;
 }
 
 .label-style {
@@ -408,6 +431,15 @@ left: 53px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   border: none;
+  transition: 250ms;
+}
+
+.btn-submit:hover {
+  transform: scale(1.2);
+  box-shadow: 0px 3px 1px rgb(0 0 0 / 10%), 0px 1px 2px rgb(0 0 0 / 8%), 0px 2px 2px rgb(0 0 0 / 12%);
+  border-radius: 18px;
+  font-size: 20px;
+  transition: 250ms;
 }
 
 /* ================ END MODAL ============= */
@@ -702,6 +734,11 @@ left: 53px;
   background-color: var(--dark);
 }
 
+.footer-list {
+  display: flex;
+  list-style: none;
+}
+
 .secound-logo {
   position: absolute;
   margin-top: 84px;
@@ -790,7 +827,7 @@ address {
 
 .newsletter {
   display: flex;
-  margin-left: 78px;
+  margin-left: 59px;
   margin-top: 54px;
 }
 
@@ -819,6 +856,8 @@ address {
   font-size: 16px;
   line-height: 1.25em;
   padding-left: 16px;
+  transition: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .newsletter-input::placeholder {
@@ -837,18 +876,32 @@ address {
   -webkit-box-shadow: 18px 30px 43px 0px rgba(66, 68, 90, 0);
   -moz-box-shadow: 18px 30px 43px 0px rgba(66, 68, 90, 0);
   box-shadow: 18px 30px 43px 0px rgba(66, 68, 90, 0);
+  transition: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .newsletter-submit {
+  position: relative;
   width: 200px;
   height: 50px;
+  margin-top: 38px;
   background: #2196F3;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   border: none;
   margin-left: 12px;
   cursor: pointer;
+  transition: 250ms;
 }
+
+.newsletter-submit:hover {
+  transform: scale(1.1 );
+  box-shadow: 0px 3px 1px rgb(0 0 0 / 10%), 0px 1px 2px rgb(0 0 0 / 8%), 0px 2px 2px rgb(0 0 0 / 12%);
+  border-radius: 18px;
+  font-size: 20px;
+  transition: 250ms;
+}
+
 
 .icon-Newsletter {
   width: 125px;
@@ -883,6 +936,7 @@ address {
 button:hover {
   background-color: var(--blue);
   color: var(--FFF);
+  transform: scale(1.1);
   transition: background 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -890,6 +944,7 @@ button:hover {
 button:focus {
   background-color: var(--blue);
   color: var(--FFF);
+  transform: scale(1.1);
   transition: background 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
