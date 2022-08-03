@@ -366,21 +366,21 @@ input {
 
 .icon-person {
   position: absolute;
-  top: 102px;
+  top: 103px;
   left: 53px;
   transition: 250ms;
 }
 
 .icon-phone {
 position: absolute;
-top: 171px;
+top: 172px;
 left: 53px;
 transition: 250ms;
 }
 
 .icon-email2 {
 position: absolute;
-top: 239px;
+top: 240px;
 left: 53px;
 transition: 250ms;
 }
@@ -690,7 +690,7 @@ transition: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
  }
 
- .icon-customer:hover {
+ /* .icon-customer:hover {
   fill: var(--blue);
   transition: background 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -700,7 +700,7 @@ transition: 250ms;
   fill: var(--blue);
   transition: background 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
- }
+ } */
 
  .box-logo {
   width: 170px;
@@ -709,19 +709,29 @@ transition: 250ms;
   border-radius: 4px;
   padding: 16px 32px 16px 32px;
   fill:  #AFB1B8;
-  transition: background 250ms;
+  transition:250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
  }
 
  .box-logo:hover {
   border-color: var(--blue);
+  transform: scale(1.1);
+  transition: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+ }
+
+ .box-logo:hover .icon-customer,
+ .box-logo:focus .icon-customer {
+  fill: var(--blue);
+  transform: scale(1.1);
   transition: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
  }
 
  .box-logo:focus {
   border-color: var(--blue);
-  transition: background 250ms;
+  transition: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
  }
 
@@ -828,7 +838,7 @@ address {
 .newsletter {
   display: flex;
   margin-left: 59px;
-  margin-top: 54px;
+  margin-top: 52px;
 }
 
 .sing-up {
