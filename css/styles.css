@@ -106,6 +106,20 @@ a:hover {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.underline::after {
+  position: absolute;
+  height: 4px;
+  width: 100%;
+  left: 0;
+  margin-top: 44px;
+  background: var(--blue);
+  border-radius: 2px;
+  content: "";
+  pointer-events: none;
+  cursor: default;
+  color: var(--blue);
+}
+
 .active::after {
   position: absolute;
   height: 4px;
@@ -117,6 +131,40 @@ a:hover {
   content: "";
   pointer-events: none;
   cursor: default;
+  opacity: 0;
+  transition-duration: 250ms;
+}
+
+.active:hover::after {
+  position: absolute;
+  height: 4px;
+  width: 100%;
+  left: 0;
+  margin-top: 44px;
+  background: var(--blue);
+  border-radius: 2px;
+  content: "";
+  pointer-events: none;
+  cursor: default;
+  opacity: 1;
+  transition-duration: 250ms;
+}
+
+.underline::after {
+  position: absolute;
+  height: 4px;
+  width: 100%;
+  left: 0;
+  margin-top: 44px;
+  background: var(--blue);
+  border-radius: 2px;
+  content: "";
+  pointer-events: none;
+  cursor: default;
+}
+
+.activ-nav {
+  color: var(--blue);
 }
 
 .secound-navigation-list {
@@ -220,13 +268,13 @@ a:hover {
   height: 100%;
   z-index: 1000;
   background-color: rgba(0, 0, 0, 0.5);
-  transition: transform 1200ms cubic-bezier(0.4, 0, 0.2, 1),
-  opacity 1200ms cubic-bezier(0.4, 0, 0.2, 1),
-  visibility 1200ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
+  opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+  visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .is-hidden {
-  transform: scale3d(1.9, 1.9, 1.9);
+  transform: scale3d(2, 2, 2);
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
@@ -287,12 +335,13 @@ a:hover {
   transition: 250ms;
 }
 
-.input:placeholder-shown {
-  border-color: var(--blue);
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+.input::placeholder {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.166em;
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
 }
-
 
 .input:hover {
   border-color: var(--blue);
@@ -405,13 +454,30 @@ transition: 250ms;
   justify-content: center;
 }
 
-.clause-style {
-  margin-left: 9px;
-}
 
 .clause-link:visited {
   color: var(--blue);
 }
+
+
+
+.checkbox::before {
+  display: inline-block;
+  margin-right: 7px;
+  content: "";
+  width: 11px;
+  height: 12px;
+  border: 1px solid #000;
+  border-radius: 2px;
+}
+
+.border:checked + .checkbox::before {
+  background-color: var(--blue);
+  border: 1px solid var(--blue);
+  border-radius: 2px;
+  background-image: url(../images/icons.svg#icon-check);
+}
+
 
 .submit {
   display: flex;
