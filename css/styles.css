@@ -459,14 +459,12 @@ transition: 250ms;
   color: var(--blue);
 }
 
-
-
 .checkbox::before {
-  display: inline-block;
+  display: inline-flex;
   margin-right: 7px;
   content: "";
-  width: 11px;
-  height: 12px;
+  width: 16px;
+  height: 15px;
   border: 1px solid #000;
   border-radius: 2px;
 }
@@ -475,9 +473,10 @@ transition: 250ms;
   background-color: var(--blue);
   border: 1px solid var(--blue);
   border-radius: 2px;
-  background-image: url(../images/icons.svg#icon-check);
+  background-image: url(../images/check.svg);
+  background-repeat: no-repeat;
+  background-position: center;
 }
-
 
 .submit {
   display: flex;
@@ -506,6 +505,12 @@ transition: 250ms;
   border-radius: 18px;
   font-size: 20px;
   transition: 250ms;
+}
+
+.icon-x {
+  width: 13px;
+  height: 12px;
+  margin-top: 3px;
 }
 
 /* ================ END MODAL ============= */
