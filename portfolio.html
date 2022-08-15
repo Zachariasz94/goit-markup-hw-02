@@ -19,55 +19,55 @@
   <!-- Nasze menu -->
   <body>
     <header class="header">
-      <div class="container header-flex">
-        <a class="logo decoration" href="index.html"
-          ><span class="first-word">Web</span
-          ><span class="secound-word">Studio</span></a
+      <div class="container header__flex">
+        <a class="logo" href="index.html"
+          ><span class="logo__first-word">Web</span
+          ><span class="logo__secound-word">Studio</span></a
         >
-      <nav>
-        <ul class="first-navigation-list style">
-          <li class="first-navigation-list-item">
-            <a class="first-nav-link decoration active" href="index.html">Agencja</a>
-          </li>
+        <nav>
+          <ul class="header__navigation">
+            <li>
+              <a class="header__navigation-link header__navigation-active" href="index.html">Agencja</a>
+            </li>
 
-          <li class="first-navigation-list-item">
-            <a class="first-nav-link decoration underline activ-nav" href="portfolio.html"
-              >Portfolio</a
+            <li>
+              <a class="header__navigation-link header__navigation-underline header__navigation-activ-nav" href="portfolio.html"
+                >Portfolio</a
+              >
+            </li>
+            <li>
+              <a class="header__navigation-link header__navigation-active" href="#footer">Kontaky</a>
+            </li>
+          </ul>
+        </nav>
+
+        <ul class="header__contact">
+          <li>
+            <a
+              class="header__contact-link"
+              href="mailto:info@devstudio.com"
+            >
+              <div class="header__contact-icon">
+                <svg width="16" height="12" class="icon icon-mail">
+                  <use href="./images/icons.svg#icon-mail"></use>
+                </svg>
+              </div>
+              info@devstudio.com</a
             >
           </li>
-          <li class="first-navigation-list-item">
-            <a class="first-nav-link decoration active" href="#footer">Kontaky</a>
+
+          <li>
+            <a class="header__contact-link" href="tel:+48111111111">
+              <div class="header__contact-icon">
+                <svg width="16" height="12" class="icon icon-smartphone">
+                  <use href="./images/icons.svg#icon-smartphone"></use>
+                </svg>
+              </div>
+              +48 111 111 111</a
+            >
           </li>
         </ul>
-      </nav>
-
-      <ul class="secound-navigation-list style">
-        <li class="secound-navigation-list-item">
-          <a
-            class="secound-nav-link decoration"
-            href="mailto:info@devstudio.com"
-          >
-            <div class="nav-icon">
-              <svg class="icon icon-mail">
-                <use href="./images/icons.svg#icon-mail"></use>
-              </svg>
-            </div>
-            info@devstudio.com</a
-          >
-        </li>
-
-        <li class="secound-navigation-list-item">
-          <a class="secound-nav-link decoration" href="tel:+48111111111">
-            <div class="nav-icon">
-              <svg class="icon icon-smartphone">
-                <use href="./images/icons.svg#icon-smartphone"></use>
-              </svg>
-            </div>
-            +48 111 111 111</a
-          >
-        </li>
-      </ul>
-    </div>
+      </div>
     </header>
 
     <!-- Nasze projekty -->
@@ -75,174 +75,174 @@
     <main class="contents container">
       <section class="portfolio container">
         <div class="portfolio-first-list">
-          <ul class="button-list style">
-            <li class="button-list-child">
-              <button class="button-portfolio" type="button">
-                <span class="button-name">Wszystkie</span>
+          <ul class="button-list">
+            <li>
+              <button class="button-list__button-portfolio" type="button">
+                <span class="button-list__button-name">Wszystkie</span>
               </button>
             </li>
 
-            <li class="button-list-child">
-              <button class="button-portfolio" type="button">
-                <span class="button-name">Strony</span>
+            <li>
+              <button class="button-list__button-portfolio" type="button">
+                <span class="button-list__button-name">Strony</span>
               </button>
             </li>
 
-            <li class="button-list-child">
-              <button class="button-portfolio" type="button">
-                <span class="button-name">Aplikacje</span>
+            <li>
+              <button class="button-list__button-portfolio" type="button">
+                <span class="button-list__button-name">Aplikacje</span>
               </button>
             </li>
 
-            <li class="button-list-child">
-              <button class="button-portfolio" type="button">
-                <span class="button-name">Dizajn</span>
+            <li>
+              <button class="button-list__button-portfolio" type="button">
+                <span class="button-list__button-name">Dizajn</span>
               </button>
             </li>
 
-            <li class="button-list-child">
-              <button class="button-portfolio" type="button">
-                <span class="button-name">Marketing</span>
+            <li>
+              <button class="button-list__button-portfolio" type="button">
+                <span class="button-list__button-name">Marketing</span>
               </button>
             </li>
           </ul>
         </div>
 
         <div class="portfolio-secound-list">
-          <ul class="our-project-list style">
-            <li class="our-project-list-child">
-              <div class="hover-overlay">
-                <figure class="box-figure">
+          <ul class="our-project-list">
+            <li class="our-project-list__child">
+              <div class="our-project-list__hover-overlay">
+                <figure class="our-project-list__box-figure">
                   <img
                     src="images/our-projects/techport.jpg"
                     alt="Otwarty laptop wyświetla stronę internetową."
                   />
-                  <p class="description-box overlay">Technocrack jest popularną platformą
+                  <p class="our-project-list__description-box our-project-list__overlay">Technocrack jest popularną platformą
                     wykorzystywanądo rozpowszechniania koronawirusa. Firmy wykorzystują tę platformę do celów szpiegowskich i ataków na niezabezpieczone serwery konkurencji</p>
                 </figure>
               </div>
-              <h3 class="project-name">Technocrack</h3>
-              <p class="project-paragraph">Strona interetowa</p>
+              <h3 class="our-project-list__project-name">Technocrack</h3>
+              <p class="our-project-list__project-paragraph">Strona interetowa</p>
             </li>
 
-            <li class="our-project-list-child">
-              <div class="hover-overlay">
-                <figure class="box-figure">
+            <li class="our-project-list__child">
+              <div class="our-project-list__hover-overlay">
+                <figure class=our-project-list__"box-figure">
               <img
                 src="images/our-projects/grafikaport.jpg"
                 alt="Dwoje koszykarzy walczy o piłkę."
               />
-              <p class="description-box overlay">Technocrack jest popularną platformą
+              <p class="our-project-list__description-box our-project-list__overlay">Technocrack jest popularną platformą
                     wykorzystywanądo rozpowszechniania koronawirusa. Firmy wykorzystują tę platformę do celów szpiegowskich i ataków na niezabezpieczone serwery konkurencji</p>
                 </figure>
               </div>
-              <h3 class="project-name">Grafika New Orlean vs Golden Star</h3>
-              <p class="project-paragraph">Dizajn</p>
+              <h3 class="our-project-list__project-name">Grafika New Orlean vs Golden Star</h3>
+              <p class="our-project-list__project-paragraph">Dizajn</p>
             </li>
 
-            <li class="our-project-list-child">
-              <div class="hover-overlay">
-                <figure class="box-figure">
+            <li class="our-project-list__child">
+              <div class="our-project-list__hover-overlay">
+                <figure class="our-project-list__box-figure">
               <img
                 src="images/our-projects/restauracjaport.jpg"
                 alt="Logo restauracji z rybą w tle."
               />
-              <p class="description-box overlay">Technocrack jest popularną platformą
+              <p class="our-project-list__description-box our-project-list__overlay">Technocrack jest popularną platformą
                     wykorzystywanądo rozpowszechniania koronawirusa. Firmy wykorzystują tę platformę do celów szpiegowskich i ataków na niezabezpieczone serwery konkurencji</p>
                 </figure>
               </div>
-              <h3 class="project-name">Restauracja Seafood</h3>
-              <p class="project-paragraph">Aplikacja</p>
+              <h3 class="our-project-list__project-name">Restauracja Seafood</h3>
+              <p class="our-project-list__project-paragraph">Aplikacja</p>
             </li>
 
-            <li class="our-project-list-child">
-              <div class="hover-overlay">
-                <figure class="box-figure">
+            <li class="our-project-list__child">
+              <div class="our-project-list__hover-overlay">
+                <figure class="our-project-list__box-figure">
               <img
                 src="images/our-projects/projektport.jpg"
                 alt="Czarne słuchawki nauszne."
               />
-              <p class="description-box overlay">Technocrack jest popularną platformą
+              <p class="our-project-list__description-box our-project-list__overlay">Technocrack jest popularną platformą
                     wykorzystywanądo rozpowszechniania koronawirusa. Firmy wykorzystują tę platformę do celów szpiegowskich i ataków na niezabezpieczone serwery konkurencji</p>
                 </figure>
               </div>
-              <h3 class="project-name">Projekt Prime</h3>
-              <p class="project-paragraph">Marketing</p>
+              <h3 class="our-project-list__project-name">Projekt Prime</h3>
+              <p class="our-project-list__project-paragraph">Marketing</p>
             </li>
 
-            <li class="our-project-list-child">
-              <div class="hover-overlay">
-                <figure class="box-figure">
+            <li class="our-project-list__child">
+              <div class="our-project-list__hover-overlay">
+                <figure class="our-project-list__box-figure">
               <img
                 src="images/our-projects/boxesport.jpg"
                 alt="Dwa pudełka różnej wielkości."
               />
-              <p class="description-box overlay">Technocrack jest popularną platformą
+              <p class="our-project-list__description-box our-project-list__overlay">Technocrack jest popularną platformą
                     wykorzystywanądo rozpowszechniania koronawirusa. Firmy wykorzystują tę platformę do celów szpiegowskich i ataków na niezabezpieczone serwery konkurencji</p>
                 </figure>
               </div>
-              <h3 class="project-name">Projekt Boxes</h3>
-              <p class="project-paragraph">Aplikacja</p>
+              <h3 class="our-project-list__project-name">Projekt Boxes</h3>
+              <p class="our-project-list__project-paragraph">Aplikacja</p>
             </li>
 
-            <li class="our-project-list-child">
-              <div class="hover-overlay">
-                <figure class="box-figure">
+            <li class="our-project-list__child">
+              <div class="our-project-list__hover-overlay">
+                <figure class="our-project-list__box-figure">
               <img
                 src="images/our-projects/inspirationport.jpg"
                 alt="Monitor wyświetla stronę o ciemnych kolorach."
               />
-              <p class="description-box overlay">Technocrack jest popularną platformą
+              <p class="our-project-list__description-box our-project-list__overlay">Technocrack jest popularną platformą
                     wykorzystywanądo rozpowszechniania koronawirusa. Firmy wykorzystują tę platformę do celów szpiegowskich i ataków na niezabezpieczone serwery konkurencji</p>
                 </figure>
               </div>
-              <h3 class="project-name">Inspiration has no Birders</h3>
-              <p class="project-paragraph">Strona internetowa</p>
+              <h3 class="our-project-list__project-name">Inspiration has no Birders</h3>
+              <p class="our-project-list__project-paragraph">Strona internetowa</p>
             </li>
 
-            <li class="our-project-list-child">
-              <div class="hover-overlay">
-                <figure class="box-figure">
+            <li class="our-project-list__child">
+              <div class="our-project-list__hover-overlay">
+                <figure class="our-project-list__box-figure">
               <img
                 src="images/our-projects/magazynport.jpg"
                 alt="Otwary magazyn na stronie z nagłówkiem edycja limitowana."
               />
-              <p class="description-box overlay">Technocrack jest popularną platformą
+              <p class="our-project-list__description-box our-project-list__overlay">Technocrack jest popularną platformą
                     wykorzystywanądo rozpowszechniania koronawirusa. Firmy wykorzystują tę platformę do celów szpiegowskich i ataków na niezabezpieczone serwery konkurencji</p>
                 </figure>
               </div>
-              <h3 class="project-name">Magazyn Limited Edytion</h3>
-              <p class="project-paragraph">Dzizajn</p>
+              <h3 class="our-project-list__project-name">Magazyn Limited Edytion</h3>
+              <p class="our-project-list__project-paragraph">Dzizajn</p>
             </li>
 
-            <li class="our-project-list-child">
-              <div class="hover-overlay">
-                <figure class="box-figure">
+            <li class="our-project-list__child">
+              <div class="our-project-list__hover-overlay">
+                <figure class="our-project-list__box-figure">
               <img
                 src="images/our-projects/labport.jpg"
                 alt="Metka z napisem LAB EL TAG."
               />
-              <p class="description-box overlay">Technocrack jest popularną platformą
+              <p class="our-project-list__description-box our-project-list__overlay">Technocrack jest popularną platformą
                     wykorzystywanądo rozpowszechniania koronawirusa. Firmy wykorzystują tę platformę do celów szpiegowskich i ataków na niezabezpieczone serwery konkurencji</p>
                 </figure>
               </div>
-              <h3 class="project-name">Projekt LAB</h3>
-              <p class="project-paragraph">Marketing</p>
+              <h3 class="our-project-list__project-name">Projekt LAB</h3>
+              <p class="our-project-list__project-paragraph">Marketing</p>
             </li>
 
-            <li class="our-project-list-child">
-              <div class="hover-overlay">
-                <figure class="box-figure">
+            <li class="our-project-list__child">
+              <div class="our-project-list__hover-overlay">
+                <figure class="our-project-list__box-figure">
               <img
                 src="images/our-projects/growingport.jpg"
                 alt="Zdjęcie z góry na którym widac jak toś używa laptopa."
               />
-              <p class="description-box overlay">Technocrack jest popularną platformą
+              <p class="our-project-list__description-box our-project-list__overlay">Technocrack jest popularną platformą
                     wykorzystywanądo rozpowszechniania koronawirusa. Firmy wykorzystują tę platformę do celów szpiegowskich i ataków na niezabezpieczone serwery konkurencji</p>
                 </figure>
               </div>
-              <h3 class="project-name">Growing Busiess</h3>
-              <p class="project-paragraph">Aplikacja</p>
+              <h3 class="our-project-list__project-name">Growing Busiess</h3>
+              <p class="our-project-list__project-paragraph">Aplikacja</p>
             </li>
           </ul>
         </div>
@@ -256,32 +256,32 @@
         <ul class="footer-list">
           <li style="width: 263px;">
             <div>
-              <a class="logo secound-logo decoration" href="index.html"
+              <a class="logo secound-logo" href="index.html"
                 ><span class="third-word">Web</span
                 ><span class="fourth-word">Studio</span></a
               >
               
               <address class="address">
                 <ul class="address-list">
-                  <li class="address-list-item style">
+                  <li class="address-list__item">
                     <a
-                      class="address-link address-child decoration"
+                      class="address-list__address-link"
                       href="https://www.google.com/search?q=m.+Warszawa%2C+Aleje+Jerozolimskie+21+maps&oq=m.+Warszawa%2C+Aleje+Jerozolimskie+21+maps&aqs=chrome..69i57j0i546l2.7644j0j4&sourceid=chrome&ie=UTF-8"
                       >m. Warszawa, Aleje Jerozolimskie 21</a
                     >
                   </li>
 
-                  <li class="address-list-item style">
+                  <li class="address-list__address-list-item">
                     <a
-                      class="paragraph address-child decoration"
+                      class="address-list__footer-link"
                       href="mailto:info@example.com"
                       >info@example.com</a
                     >
                   </li>
 
-                  <li class="address-list-item style">
+                  <li class="address-list__address-list-item">
                     <a
-                      class="paragraph address-child decoration"
+                      class="address-list__footer-link "
                       href="tel:+48111111111"
                       >+48 111 111 111</a
                     >
@@ -296,34 +296,34 @@
               <section class="footer-social-position">
                 <h2 class="join-to-as">DOŁĄCZ DO NAS</h2>
 
-                <ul class="footer-social-media-list style">
+                <ul class="footer-social-media">
                   <li>
-                    <a class="footer-social-media-list-item" href="#">
-                      <svg width="20" height="20" class="icon icon-instagram footer-social">
+                    <a class="footer-social-media__item" href="#">
+                      <svg width="20" height="20" class="icon icon-instagram footer-social-media__footer-social">
                         <use href="./images/icons.svg#icon-instagram"></use>
                       </svg>
                     </a>
                   </li>
 
                   <li>
-                    <a class="footer-social-media-list-item" href="#">
-                      <svg width="20" height="20" class="icon icon-twitter footer-social">
+                    <a class="footer-social-media__item" href="#">
+                      <svg width="20" height="20" class="icon icon-twitter footer-social-media__footer-social">
                         <use href="./images/icons.svg#icon-twitter"></use>
                       </svg>
                     </a>
                   </li>
 
                   <li>
-                    <a class="footer-social-media-list-item" href="#">
-                      <svg width="20" height="20" class="icon icon-facebook footer-social">
+                    <a class="footer-social-media__item" href="#">
+                      <svg width="20" height="20" class="icon icon-facebook footer-social-media__footer-social">
                         <use href="./images/icons.svg#icon-facebook"></use>
                       </svg>
                     </a>
                   </li>
 
                   <li>
-                    <a class="footer-social-media-list-item" href="#">
-                      <svg width="20" height="20" class="icon icon-linkedin footer-social">
+                    <a class="footer-social-media__item" href="#">
+                      <svg width="20" height="20" class="icon icon-linkedin footer-social-media__footer-social">
                         <use href="./images/icons.svg#icon-linkedin"></use>
                       </svg>
                     </a>
@@ -337,10 +337,10 @@
             <div>
               <div class="newsletter">
                 <label>
-                  <span class="sing-up">ZAPISZ SIĘ DO NEWSLETTERA</span>
-                  <input class="newsletter-input" name="Newsletter" placeholder="E-mail" required />
+                  <span class="newsletter__sing-up">ZAPISZ SIĘ DO NEWSLETTERA</span>
+                  <input class="newsletter__input" name="Newsletter" placeholder="E-mail" required />
                 </label>
-                <button class="newsletter-submit" type="submit"><svg class="icon icon-Newsletter"><use href="./images/icons.svg#icon-Newsletter"></use></svg></button>
+                <button class="newsletter__submit" type="submit"><svg class="icon newsletter__icon-Newsletter"><use href="./images/icons.svg#icon-Newsletter"></use></svg></button>
               </div>
             </div>
           </li>
