@@ -1,0 +1,62 @@
+.our-customers-font {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  text-align: center;
+  line-height: 1.666em;
+  letter-spacing: 0.03em;
+  color: var(--black);
+  transition: background 250ms, fill 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+ }
+
+.our-customers {
+    display: flex;
+    margin-top: 50px;
+    gap: 30px;
+    text-decoration: none;
+  
+  
+   &__icon-customer {
+    width: 106px;
+    height: 60px;
+    fill: #afb1b8;
+    transition: background 250ms, fill 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+   &
+  
+  &__box-logo {
+    width: 170px;
+    height: 92px;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+    padding: 16px 32px 16px 32px;
+    fill:  #AFB1B8;
+    transition:250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+   }
+  
+   &__box-logo:hover {
+    border-color: var(--blue);
+    transform: scale(1.1);
+    transition: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
+   }
+  
+   &__box-logo:hover &__icon-customer,
+   &__box-logo:focus &__icon-customer {
+    fill: var(--blue);
+    transform: scale(1.1);
+    transition: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+   }
+  
+   &__box-logo:focus {
+    border-color: var(--blue);
+    transition: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+   }
+
+  }

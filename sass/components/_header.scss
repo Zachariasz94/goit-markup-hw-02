@@ -1,0 +1,114 @@
+.header {
+    height: 80px;
+    border-bottom: 1px solid #ececec;
+  
+  
+  &__flex {
+    display: flex;
+    align-items: center;
+  }
+  
+  &__navigation {
+    width: 254px;
+    height: 16px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.142em;
+    letter-spacing: 0.02em;
+    margin-left: 93px;
+    gap: 46px;
+    display: flex;
+  }
+  
+  &__navigation-link {
+    color: var(--black);
+    position: relative;
+    transition: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    text-decoration: none;
+  }
+  
+  &__navigation-underline::after {
+    position: absolute;
+    height: 4px;
+    width: 100%;
+    left: 0;
+    margin-top: 44px;
+    border-radius: 2px;
+    content: "";
+    pointer-events: none;
+    cursor: default;
+    color: var(--blue);
+  }
+  
+  &__navigation-active::after {
+    position: absolute;
+    height: 4px;
+    width: 100%;
+    left: 0;
+    margin-top: 44px;
+    background: var(--blue);
+    border-radius: 2px;
+    content: "";
+    pointer-events: none;
+    cursor: default;
+    opacity: 0;
+    transition-duration: 250ms;
+  }
+  
+  &__navigation-active:hover::after {
+    position: absolute;
+    height: 4px;
+    width: 100%;
+    left: 0;
+    margin-top: 44px;
+    background: var(--blue);
+    border-radius: 2px;
+    content: "";
+    pointer-events: none;
+    cursor: default;
+    opacity: 1;
+    transition-duration: 250ms;
+  }
+  
+  &__navigation-underline::after {
+    position: absolute;
+    height: 4px;
+    width: 100%;
+    left: 0;
+    margin-top: 44px;
+    background: var(--blue);
+    border-radius: 2px;
+    content: "";
+    pointer-events: none;
+    cursor: default;
+  }
+  
+  &__navigation-activ-nav {
+    color: var(--blue);
+  }
+  
+  &__contact {
+    display: flex;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.142em;
+    letter-spacing: 0.02em;
+    margin-left: 316px;
+  }
+  
+  &__contact-link {
+    color: var(--grey);  
+    margin-left: 27px;
+    display: flex;
+    text-decoration: none;
+  }
+  
+  &__contact-icon {
+    display: flex;
+    padding-right: 10px;
+    justify-content: center;
+    align-items: center;
+  }
+
+}

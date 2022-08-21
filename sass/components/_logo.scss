@@ -1,0 +1,32 @@
+.logo {
+  margin-top: 24px;
+  margin-bottom: 25px;
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.192em;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+
+    &__first-word {
+      color: var(--blue);
+    }
+
+    &__secound-word {
+      color: var(--black);
+    }
+
+    &__secound-logo {
+      position: absolute;
+      margin-top: 84px;
+    }
+
+    &__third-word {
+      color: var(--blue);
+    }
+
+    &__fourth-word {
+      color: var(--FFF);
+    }
+}

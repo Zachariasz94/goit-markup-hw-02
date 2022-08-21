@@ -1,0 +1,66 @@
+:root {
+  --body-font: 'Roboto', sans-serif;
+  --dark: #2f303a;
+  --grey: #757575;
+  --FFF: #fff;
+  --blue: #2196f3;
+  --black: #212121;
+  --button: #f5f4fa;
+  --line: #ececec;
+}
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+body {
+  font-family: var(--body-font);
+  background-color: var(--FFF);
+  border: 0;
+}
+
+a:focus {
+  color: var(--blue);
+  transition: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+a:hover {
+  color: var(--blue);
+  transition: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  fill: currentColor;
+  stroke: currentColor;
+}
+
+button:hover {
+  background-color: var(--blue);
+  color: var(--FFF);
+  transform: scale(1.1);
+  transition: background 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+button:focus {
+  background-color: var(--blue);
+  color: var(--FFF);
+  transform: scale(1.1);
+  transition: background 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}

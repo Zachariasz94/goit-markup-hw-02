@@ -1,0 +1,35 @@
+.footer-social-media {
+    display: flex;
+    position: relative;
+    top: 19px;
+    gap:10px;
+    align-items: center;
+    justify-content: center;
+  
+  
+  &__item {
+    display: flex;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.1);
+    transition: background 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  &__item:hover,
+  &__item:focus {
+    background: var(--blue);
+    transition: background 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  &__footer-social {
+    fill: var(--FFF);
+    transition: background 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+}
