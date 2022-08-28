@@ -19,7 +19,7 @@
 
 
   &__footer-list {
-    display: wrap;
+    display: flex;
     list-style: none;
 
     @media screen and (max-width:767px) {
@@ -29,6 +29,11 @@
       max-width: 100%;
       display: wrap;
       flex-wrap: wrap;
+    }
+
+    @media screen and (min-width: 768px) and (max-width:1199px) {
+      flex-wrap: wrap;
+      justify-content: space-evenly;
     }
 
     @media screen and (min-width:1200px) {
@@ -55,6 +60,10 @@
     @media screen and (max-width:767px) {
       max-width: 100%;
       text-align: center;
+    }
+
+    @media screen and (min-width: 768px) and (max-width:1199px) {
+      margin-top: 60px;
     }
   }
 
@@ -150,6 +159,11 @@
       margin-top: 60px;
     }
 
+    @media screen and (min-width: 768px) and (max-width:1199px) {
+      margin-top: 72px;
+      text-align: center;
+    }
+
     @media screen and (min-width:1200px) {
       margin-top: 72px;
     }
@@ -198,12 +212,16 @@
     margin-left: 59px;
     margin-top: 52px;
 
-    @media screen and (max-width:767px) {
+    @media screen and (max-width:1199px) {
       flex-direction: column;
       max-width: 100%;
       align-items: center;
       margin-left: 0;
     }
+
+    /* @media screen and (min-width: 768px) and (max-width:1199px) {
+      
+     } */
 
     @media screen and (min-width:1200px) {
       margin-top: 72px;
@@ -224,6 +242,11 @@
       flex-direction: column;
       align-items: center;
       }
+
+      @media screen and (min-width: 768px) and (max-width:1199px) {
+       display: flex;
+       justify-content: center;
+      }
   }
 
   &__submit {
@@ -242,6 +265,12 @@
     @media screen and (max-width:767px) {
      margin-top: 20px;
     }
+
+    @media screen and (min-width: 768px) and (max-width:1199px) {
+      margin-top: 20px;
+      margin-bottom: 60px;
+      margin-left: 0;
+     }
 
     @media screen and (min-width:1200px) {
       
@@ -276,8 +305,9 @@
     transition: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
-    /* @media screen and (max-width: 767px) {
-    } */
+    @media screen and (min-width: 768px) and (max-width:1199px) {
+      width: 450px;
+     }
   }
 
   &__input::placeholder {

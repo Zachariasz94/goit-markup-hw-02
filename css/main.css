@@ -286,7 +286,6 @@ button:focus {
 }
 
 .menu {
-  display: flex;
   padding: 0;
   margin: 0;
   list-style: none;
@@ -594,7 +593,7 @@ button:focus {
   }
 }
 .footer__footer-list {
-  display: wrap;
+  display: flex;
   list-style: none;
 }
 @media screen and (max-width: 767px) {
@@ -605,6 +604,12 @@ button:focus {
     max-width: 100%;
     display: wrap;
     flex-wrap: wrap;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer__footer-list {
+    flex-wrap: wrap;
+    justify-content: space-evenly;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -631,6 +636,11 @@ button:focus {
   .footer__logo {
     max-width: 100%;
     text-align: center;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer__logo {
+    margin-top: 60px;
   }
 }
 .footer__third-word {
@@ -711,6 +721,12 @@ button:focus {
     margin-top: 60px;
   }
 }
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer__join-to-as {
+    margin-top: 72px;
+    text-align: center;
+  }
+}
 @media screen and (min-width: 1200px) {
   .footer__join-to-as {
     margin-top: 72px;
@@ -749,8 +765,11 @@ button:focus {
   display: flex;
   margin-left: 59px;
   margin-top: 52px;
+  /* @media screen and (min-width: 768px) and (max-width:1199px) {
+
+   } */
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
   .footer__newsletter {
     flex-direction: column;
     max-width: 100%;
@@ -779,6 +798,12 @@ button:focus {
     align-items: center;
   }
 }
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer__sing-up {
+    display: flex;
+    justify-content: center;
+  }
+}
 .footer__submit {
   position: relative;
   width: 200px;
@@ -795,6 +820,13 @@ button:focus {
 @media screen and (max-width: 767px) {
   .footer__submit {
     margin-top: 20px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer__submit {
+    margin-top: 20px;
+    margin-bottom: 60px;
+    margin-left: 0;
   }
 }
 .footer__submit:hover {
@@ -822,8 +854,11 @@ button:focus {
   padding-left: 16px;
   transition: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  /* @media screen and (max-width: 767px) {
-  } */
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer__input {
+    width: 450px;
+  }
 }
 .footer__input::placeholder {
   font-family: "Roboto";
@@ -1492,11 +1527,19 @@ button:focus {
   margin-top: 50px;
   gap: 30px;
   text-decoration: none;
+  /* @media screen and (min-width: 768px) and (max-width: 1199px) {
+
+  } */
 }
 @media screen and (max-width: 767px) {
   .our-customers {
     flex-wrap: wrap;
     justify-content: center;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .our-customers {
+    flex-wrap: wrap;
   }
 }
 .our-customers__icon-customer {
@@ -1529,6 +1572,12 @@ button:focus {
 @media screen and (max-width: 767px) {
   .our-customers__box-logo {
     width: 100%;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .our-customers__box-logo {
+    width: 226px;
+    padding: 16px 61px;
   }
 }
 .our-customers__box-logo:hover {

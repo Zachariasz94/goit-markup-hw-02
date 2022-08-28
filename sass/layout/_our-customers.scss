@@ -32,6 +32,10 @@
       flex-wrap: wrap;
       justify-content: center;
     }
+
+    @media screen and (min-width: 768px) and (max-width:1199px) {
+      flex-wrap: wrap;
+    }
   
    &__icon-customer {
     width: 106px;
@@ -50,6 +54,11 @@
     flex-basis: calc(50% - 15px)
     }
   }
+
+  /* @media screen and (min-width: 768px) and (max-width: 1199px) {
+   
+  } */
+
    
   &__box-logo {
     width: 170px;
@@ -63,6 +72,11 @@
 
     @media screen and (max-width: 767px) {
       width: 100%;
+    }
+
+    @media screen and (min-width: 768px) and (max-width:1199px) {
+      width: 226px;
+      padding: 16px 61px;
     }
 
    }
