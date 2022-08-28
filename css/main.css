@@ -1058,6 +1058,8 @@ button:focus {
 }
 .modal__clause {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   margin-top: 20px;
   font-weight: 400;
   font-size: 14px;
@@ -1071,6 +1073,13 @@ button:focus {
 .modal__checkbox {
   display: flex;
   align-items: center;
+}
+@media screen and (max-width: 767px) {
+  .modal__checkbox {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
 .modal__checkbox::before {
   display: inline-flex;
@@ -1145,7 +1154,7 @@ button:focus {
 
 @media screen and (max-width: 767px) {
   .modal {
-    width: 450px;
+    width: 400px;
   }
   .modal__header {
     padding: 40px 50px 0 50px;
