@@ -9,15 +9,30 @@
     padding: 60px 0;
   }
 
+  @media screen and (max-width:1199px) {
+    height: 100%;
+  }
+
+  @media screen and (min-width:1200px) {
+
+  }
+
 
   &__footer-list {
     display: wrap;
     list-style: none;
 
     @media screen and (max-width:767px) {
+      display: flex;
+      justify-content: center;
+      gap: 60px;
       max-width: 100%;
       display: wrap;
       flex-wrap: wrap;
+    }
+
+    @media screen and (min-width:1200px) {
+      display: flex;
     }
   }
 
@@ -28,8 +43,7 @@
   }
 
   &__logo {
-    margin-top: 24px;
-    margin-bottom: 25px;
+    margin-bottom: 20px;
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 700;
@@ -54,12 +68,20 @@
 
   &__address {
     font-style: normal;
-    padding-top: 111px;
 
     @media screen and (max-width:767px) {
       max-width: 100%;
       text-align: center;
       padding: 0;
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      width: 300px;
+      padding: 0;
+    }
+
+    @media screen and (min-width:1200px) {
+      
     }
 
   }
@@ -107,6 +129,10 @@
       max-width: 100%;
       margin-left: 0;
     }
+
+    @media screen and (max-width:1199px) {
+      
+    }
   }
 
   &__join-to-as {
@@ -123,6 +149,10 @@
       text-align: center;
       margin-top: 60px;
     }
+
+    @media screen and (min-width:1200px) {
+      margin-top: 72px;
+    }
   }
 
   &__social-media {
@@ -132,6 +162,10 @@
     gap:10px;
     align-items: center;
     justify-content: center;
+  
+    @media screen and (max-width:1199px) {
+      
+    }
   }
 
   &__item {
@@ -165,10 +199,14 @@
     margin-top: 52px;
 
     @media screen and (max-width:767px) {
+      flex-direction: column;
       max-width: 100%;
-      justify-content: center;
-      margin-top: 70px;
+      align-items: center;
       margin-left: 0;
+    }
+
+    @media screen and (min-width:1200px) {
+      margin-top: 72px;
     }
   }
 
@@ -203,6 +241,10 @@
 
     @media screen and (max-width:767px) {
      margin-top: 20px;
+    }
+
+    @media screen and (min-width:1200px) {
+      
     }
 
   }

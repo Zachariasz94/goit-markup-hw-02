@@ -63,8 +63,9 @@
 
 @media screen and (min-width: 1200px) {
   .for-biznes {
+    height: inherit;
     max-width: 1600px;
-    background-image: url(../../../images/background/background-desktop.jpg);
+    background-image: url(../images/background/background-desktop.jpg);
     background-repeat: no-repeat;
     background-size: cover;
   

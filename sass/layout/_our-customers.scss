@@ -15,6 +15,11 @@
     line-height: 1.171em;
   }
 
+  @media (max-width: 1199px) {
+    font-size: 28px;
+    line-height: 1.171em;
+}
+
  }
 
 .our-customers {
@@ -39,7 +44,13 @@
       width: 100%;
     }
    }
-  
+
+   @media screen and (max-width: 767px) {
+    &__item {
+    flex-basis: calc(50% - 15px)
+    }
+  }
+   
   &__box-logo {
     width: 170px;
     height: 92px;
@@ -51,7 +62,7 @@
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
     @media screen and (max-width: 767px) {
-      width: 210px;
+      width: 100%;
     }
 
    }
@@ -80,3 +91,9 @@
 
   }
 
+  /* .our-customers__item {
+    @media screen and (max-width: 1199px) {
+      
+    
+    }
+  } */

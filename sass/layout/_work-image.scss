@@ -1,11 +1,14 @@
 .work-image {
     width: 1170px;
     height: 386px;
-    margin-top: 130px;
 
     @media screen and (max-width:767px) {
     display: none;
     }
+
+    @media screen and (max-width:1199px) {
+      display: none;
+      }
   
     &__what-we-do {
     display: flex;
@@ -31,7 +34,7 @@
     display: flex;
     width: 370px;
     height: 70px;
-    top: 1434px;
+    top: 1452px;
     align-items: center;
     justify-content: center;
     font-weight: 700;

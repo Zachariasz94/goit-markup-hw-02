@@ -71,3 +71,28 @@
   }
 }
 }
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .lorem {
+    flex-wrap: wrap;
+    justify-content: center;
+  
+    &_item {
+    width: 100%;
+    height: 102px;
+  }
+  
+  &__name {
+    width: 354px;
+  }
+  
+  &__paragraph {
+   width: 354px;
+   padding-bottom: 30px;
+  }
+  
+  &__icon-work {
+    width: 354px;
+  }
+}
+}
