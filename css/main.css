@@ -880,7 +880,7 @@ button:focus {
 @media screen and (max-width: 767px) {
   .for-biznes {
     width: 100%;
-    background-image: url(../../images/background/background-mobile.jpg);
+    background-image: url(../images/background/background-mobile.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-size: 100% 100%;
@@ -893,7 +893,7 @@ button:focus {
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .for-biznes {
     max-width: 768px;
-    background-image: url(../../../images/background/background-tablet.jpg);
+    background-image: url(../images/background/background-tablet.jpg);
     background-repeat: no-repeat;
     background-size: cover;
   }
