@@ -863,7 +863,7 @@ button:focus {
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .for-biznes {
     max-width: 768px;
-    background-image: url(../../images/background/background-tablet.jpg);
+    background-image: url(../../../images/background/background-tablet.jpg);
     background-repeat: no-repeat;
     background-size: cover;
   }
@@ -1114,8 +1114,7 @@ button:focus {
 
 @media screen and (max-width: 767px) {
   .modal {
-    width: 100%;
-    margin: 0 15px 0 15px;
+    width: 450px;
   }
   .modal__header {
     padding: 40px 50px 0 50px;
