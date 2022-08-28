@@ -1,4 +1,17 @@
 .team {
-    height: 708px;
     background-color: var(--button);
+  }
+
+  @media screen and (max-width: 768px) {
+    .team {
+    padding: 0;
+    }
+  }
+  
+  @media screen and (min-width: 769px) and (max-width: 1199px) {
+    
+  }
+  
+  @media screen and (min-width: 1200px) {
+    
   }

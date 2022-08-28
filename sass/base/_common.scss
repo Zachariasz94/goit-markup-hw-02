@@ -42,8 +42,6 @@ a:hover {
 
 .icon {
   display: inline-block;
-  width: 1em;
-  height: 1em;
   stroke-width: 0;
   fill: currentColor;
   stroke: currentColor;
@@ -63,4 +61,12 @@ button:focus {
   transform: scale(1.1);
   transition: background 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.icon-antenna,
+.icon-clock,
+.icon-diagram,
+.icon-astronaut {
+  width: 70px;
+  height: 70px;
 }
