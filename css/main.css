@@ -1700,10 +1700,12 @@ button:focus {
 .button-list__button-name {
   margin: 6px 22px;
 }
-.button-list__btn-pf {
-  flex-basis: calc((100% - 16px) / 3);
-}
 
+@media screen and (max-width: 767px) {
+  .button-list__btn-pf {
+    flex-basis: calc((100% - 16px) / 3);
+  }
+}
 .our-project-list {
   margin-top: 84px;
   display: flex;
