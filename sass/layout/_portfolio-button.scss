@@ -2,6 +2,12 @@
     display: flex;
     gap: 8px;
   
+    @media screen and (max-width: 767px) {
+      flex-wrap: wrap;
+      justify-content: flex-start;
+    }
+
+
   
   &__button-portfolio {
     font-weight: 500;
@@ -17,10 +23,19 @@
     text-align: center;
     transition: 250ms; fill: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    @media screen and (max-width: 767px) {
+      width: 100%;
+    }
+
   }
   
   &__button-name {
     margin: 6px 22px;
+  }
+
+  &__btn-pf {
+    flex-basis: calc((100% - 16px) / 3);
   }
 
 }

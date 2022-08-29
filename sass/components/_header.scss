@@ -1,5 +1,5 @@
 .header {
-  border-bottom: 1px solid #ECECEC;
+    border-bottom: 1px solid #ECECEC;
     min-height: 80px;
     display: flex;
     align-items: center;
@@ -223,6 +223,7 @@
   left: 0;
   width: 100vw;
   height: 100vh;
+  z-index: 999;
   padding: 48px 50px 48px 40px;
   background-color: #fff;
   overflow: auto;

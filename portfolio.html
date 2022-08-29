@@ -2,6 +2,7 @@
 <html lang="pl">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link
       rel="stylesheet"
@@ -18,20 +19,20 @@
 
   <!-- Nasze menu -->
   <body>
-    <header class="header">
-      <div class="container header__flex">
-        <a class="logo" href="index.html"
-          ><span class="logo__first-word">Web</span
-          ><span class="logo__secound-word">Studio</span></a
+    <header class="header container">
+      <div class="header__flex">
+        <a class="header__logo" href="index.html"
+          ><span class="header__logo-first-word">Web</span
+          ><span class="header__logo-secound-word">Studio</span></a
         >
         <nav>
-          <ul class="header__navigation">
+          <ul class="menu header__navigation">
             <li>
               <a class="header__navigation-link header__navigation-active" href="index.html">Agencja</a>
             </li>
 
             <li>
-              <a class="header__navigation-link header__navigation-underline header__navigation-activ-nav" href="portfolio.html"
+              <a class="header__navigation-link  header__navigation-underline header__navigation-activ-nav" href="portfolio.html"
                 >Portfolio</a
               >
             </li>
@@ -41,8 +42,8 @@
           </ul>
         </nav>
 
-        <ul class="header__contact">
-          <li>
+        <ul class="menu header__contact">
+          <li class="header__margin-contact">
             <a
               class="header__contact-link"
               href="mailto:info@devstudio.com"
@@ -67,6 +68,43 @@
             >
           </li>
         </ul>
+        <button
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+        <svg class="icon" width="40" height="40">
+          <use href="./images/icons.svg#icon-menu_toggle" ></use>
+      </svg>
+        </button>
+        <div class="menu-container js-menu-container " id="mobile-menu">
+          <button class="menu-toggle js-close-menu">
+            <svg class="icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-close-black"></use>
+          </svg>
+          </button>
+      
+          <ul class="mobile-menu">
+            <li><a class="mobile-menu__nav-style" href="index.html">Agencja</a></li>
+            <li><a class="mobile-menu__nav-style " href="portfolio.html">Portfolio</a></li>
+            <li><a class="mobile-menu__nav-style " href="#footer">Kontakt</a></li>           
+        </ul>
+        <ul class="mobile-contact">
+            <li><a class="mobile-contact__number" href="tel:+48111111111">+48 111 111 111</a></li>
+            <li><a class="mobile-contact__mail" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+        </ul>
+        <ul class="mobile-social-network">
+            <li><a class="mobile-social-network__style mobile-social-network__border-right" href="#">Instagram</a></li>
+            <li><a class="mobile-social-network__style mobile-social-network__border-right" href="#">Twitter</a></li>
+            <li><a class="mobile-social-network__style mobile-social-network__border-right" href="#">Facebook</a></li>
+            <li><a class="mobile-social-network__style" href="#">LinkedIn</a></li>
+        </ul>
+      </div>
+  
+      <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+          integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+          crossorigin="anonymous"></script>
+      <script defer src="./mobile-menu.js"></script>
       </div>
     </header>
 
@@ -76,31 +114,31 @@
       <section class="portfolio container">
         <div class="portfolio-first-list">
           <ul class="button-list">
-            <li>
+            <li class="button-list__btn-pf">
               <button class="button-list__button-portfolio" type="button">
                 <span class="button-list__button-name">Wszystkie</span>
               </button>
             </li>
 
-            <li>
+            <li class="button-list__btn-pf">
               <button class="button-list__button-portfolio" type="button">
                 <span class="button-list__button-name">Strony</span>
               </button>
             </li>
 
-            <li>
+            <li class="button-list__btn-pf">
               <button class="button-list__button-portfolio" type="button">
                 <span class="button-list__button-name">Aplikacje</span>
               </button>
             </li>
 
-            <li>
+            <li class="button-list__btn-pf">
               <button class="button-list__button-portfolio" type="button">
                 <span class="button-list__button-name">Dizajn</span>
               </button>
             </li>
 
-            <li>
+            <li class="button-list__btn-pf">
               <button class="button-list__button-portfolio" type="button">
                 <span class="button-list__button-name">Marketing</span>
               </button>
@@ -110,11 +148,12 @@
 
         <div class="portfolio-secound-list">
           <ul class="our-project-list">
+
             <li class="our-project-list__child">
               <div class="our-project-list__hover-overlay">
                 <figure class="our-project-list__box-figure">
-                  <img
-                    src="images/our-projects/techport.jpg"
+                  <img 
+                    src="images/our-projects/technocrack.jpg"
                     alt="Otwarty laptop wyświetla stronę internetową."
                   />
                   <p class="our-project-list__description-box our-project-list__overlay">Technocrack jest popularną platformą
@@ -127,9 +166,9 @@
 
             <li class="our-project-list__child">
               <div class="our-project-list__hover-overlay">
-                <figure class=our-project-list__"box-figure">
+                <figure class="our-project-list__box-figure">
               <img
-                src="images/our-projects/grafikaport.jpg"
+                src="images/our-projects/orelan.jpg"
                 alt="Dwoje koszykarzy walczy o piłkę."
               />
               <p class="our-project-list__description-box our-project-list__overlay">Technocrack jest popularną platformą
@@ -144,7 +183,7 @@
               <div class="our-project-list__hover-overlay">
                 <figure class="our-project-list__box-figure">
               <img
-                src="images/our-projects/restauracjaport.jpg"
+                src="images/our-projects/restaurant.jpg"
                 alt="Logo restauracji z rybą w tle."
               />
               <p class="our-project-list__description-box our-project-list__overlay">Technocrack jest popularną platformą
@@ -159,7 +198,7 @@
               <div class="our-project-list__hover-overlay">
                 <figure class="our-project-list__box-figure">
               <img
-                src="images/our-projects/projektport.jpg"
+                src="images/our-projects/prime.jpg"
                 alt="Czarne słuchawki nauszne."
               />
               <p class="our-project-list__description-box our-project-list__overlay">Technocrack jest popularną platformą
@@ -174,7 +213,7 @@
               <div class="our-project-list__hover-overlay">
                 <figure class="our-project-list__box-figure">
               <img
-                src="images/our-projects/boxesport.jpg"
+                src="images/our-projects/boxes.jpg"
                 alt="Dwa pudełka różnej wielkości."
               />
               <p class="our-project-list__description-box our-project-list__overlay">Technocrack jest popularną platformą
@@ -189,7 +228,7 @@
               <div class="our-project-list__hover-overlay">
                 <figure class="our-project-list__box-figure">
               <img
-                src="images/our-projects/inspirationport.jpg"
+                src="images/our-projects/inspiration.jpg"
                 alt="Monitor wyświetla stronę o ciemnych kolorach."
               />
               <p class="our-project-list__description-box our-project-list__overlay">Technocrack jest popularną platformą
@@ -204,7 +243,7 @@
               <div class="our-project-list__hover-overlay">
                 <figure class="our-project-list__box-figure">
               <img
-                src="images/our-projects/magazynport.jpg"
+                src="images/our-projects/magazyn.jpg"
                 alt="Otwary magazyn na stronie z nagłówkiem edycja limitowana."
               />
               <p class="our-project-list__description-box our-project-list__overlay">Technocrack jest popularną platformą
@@ -219,7 +258,7 @@
               <div class="our-project-list__hover-overlay">
                 <figure class="our-project-list__box-figure">
               <img
-                src="images/our-projects/labport.jpg"
+                src="images/our-projects/lab.jpg"
                 alt="Metka z napisem LAB EL TAG."
               />
               <p class="our-project-list__description-box our-project-list__overlay">Technocrack jest popularną platformą
@@ -234,7 +273,7 @@
               <div class="our-project-list__hover-overlay">
                 <figure class="our-project-list__box-figure">
               <img
-                src="images/our-projects/growingport.jpg"
+                src="images/our-projects/growing.jpg"
                 alt="Zdjęcie z góry na którym widac jak toś używa laptopa."
               />
               <p class="our-project-list__description-box our-project-list__overlay">Technocrack jest popularną platformą
@@ -247,41 +286,41 @@
           </ul>
         </div>
       </section>
-    </main>
+    </main>  
 
     <!-- Kontakt -->
 
     <footer class="footer" id="footer">
-      <div class="container footer-display">
-        <ul class="footer-list">
-          <li style="width: 263px;">
-            <div>
-              <a class="logo logo__secound-logo" href="index.html"
-                ><span class="logo__third-word">Web</span
-                ><span class="logo__fourth-word">Studio</span></a
+      <div class="container">
+        <ul class="footer__footer-list">
+          <li class="footer__position">
+            <a class="footer__logo footer__secound-logo" href="index.html"
+                ><span class="footer__third-word">Web</span
+                ><span class="footer__fourth-word">Studio</span></a
               >
-              
-              <address class="address">
-                <ul class="address-list">
-                  <li class="address-list__item">
+
+            <div>
+              <address class="footer__address">
+                <ul class="footer__address-list">
+                  <li class="footer__item-list">
                     <a
-                      class="address-list__address-link"
+                      class="footer__address-link"
                       href="https://www.google.com/search?q=m.+Warszawa%2C+Aleje+Jerozolimskie+21+maps&oq=m.+Warszawa%2C+Aleje+Jerozolimskie+21+maps&aqs=chrome..69i57j0i546l2.7644j0j4&sourceid=chrome&ie=UTF-8"
                       >m. Warszawa, Aleje Jerozolimskie 21</a
                     >
                   </li>
 
-                  <li class="address-list__address-list-item">
+                  <li class="footer__address-list-item">
                     <a
-                      class="address-list__footer-link"
+                      class="footer__footer-link"
                       href="mailto:info@example.com"
                       >info@example.com</a
                     >
                   </li>
 
-                  <li class="address-list__address-list-item">
+                  <li class="footer__address-list-item">
                     <a
-                      class="address-list__footer-link "
+                      class="footer__footer-link "
                       href="tel:+48111111111"
                       >+48 111 111 111</a
                     >
@@ -291,39 +330,39 @@
             </div>
           </li>
 
-          <li style="margin-top: 64px">
+          <li class="footer__position">
             <div>
-              <section class="footer-social-position">
-                <h2 class="join-to-as">DOŁĄCZ DO NAS</h2>
+              <section class="footer__social-position">
+                <h2 class="footer__join-to-as">DOŁĄCZ DO NAS</h2>
 
-                <ul class="footer-social-media">
+                <ul class="footer__social-media">
                   <li>
-                    <a class="footer-social-media__item" href="#">
-                      <svg width="20" height="20" class="icon icon-instagram footer-social-media__footer-social">
+                    <a class="footer__item" href="#">
+                      <svg width="20" height="20" class="icon icon-instagram footer__footer-social">
                         <use href="./images/icons.svg#icon-instagram"></use>
                       </svg>
                     </a>
                   </li>
 
                   <li>
-                    <a class="footer-social-media__item" href="#">
-                      <svg width="20" height="20" class="icon icon-twitter footer-social-media__footer-social">
+                    <a class="footer__item" href="#">
+                      <svg width="20" height="20" class="icon icon-twitter footer__footer-social">
                         <use href="./images/icons.svg#icon-twitter"></use>
                       </svg>
                     </a>
                   </li>
 
                   <li>
-                    <a class="footer-social-media__item" href="#">
-                      <svg width="20" height="20" class="icon icon-facebook footer-social-media__footer-social">
+                    <a class="footer__item" href="#">
+                      <svg width="20" height="20" class="icon icon-facebook footer__footer-social">
                         <use href="./images/icons.svg#icon-facebook"></use>
                       </svg>
                     </a>
                   </li>
 
                   <li>
-                    <a class="footer-social-media__item" href="#">
-                      <svg width="20" height="20" class="icon icon-linkedin footer-social-media__footer-social">
+                    <a class="footer__item" href="#">
+                      <svg width="20" height="20" class="icon icon-linkedin footer__footer-social">
                         <use href="./images/icons.svg#icon-linkedin"></use>
                       </svg>
                     </a>
@@ -333,14 +372,14 @@
             </div>
           </li>
 
-          <li style="margin-top: 40px">
+          <li class="footer__position">
             <div>
-              <div class="newsletter">
+              <div class="footer__newsletter">
                 <label>
-                  <span class="newsletter__sing-up">ZAPISZ SIĘ DO NEWSLETTERA</span>
-                  <input class="newsletter__input" name="Newsletter" placeholder="E-mail" required />
+                  <span class="footer__sing-up">ZAPISZ SIĘ DO NEWSLETTERA</span>
+                  <input class="footer__input" name="Newsletter" placeholder="E-mail" required />
                 </label>
-                <button class="newsletter__submit" type="submit"><svg class="icon newsletter__icon-Newsletter"><use href="./images/icons.svg#icon-Newsletter"></use></svg></button>
+                <button class="footer__submit" type="submit"><svg class="icon footer__icon-Newsletter"><use href="./images/icons.svg#icon-Newsletter"></use></svg></button>
               </div>
             </div>
           </li>

@@ -1,19 +1,39 @@
 .content {
     width: 1600px;
-    height: 1548px;
+    /* height: 1548px; */
+
+    @media screen and (max-width: 767px) {
+      width: 100%;
+    }
+
   }
   
   .portfolio {
-    height: 1360px;
+    /* height: 1360px; */
     padding-top: 94px;
+
+    @media screen and (max-width: 767px) {
+      width: 100%;
+      padding-top: 60px;
+      padding-bottom: 60px;
+    }
   }
   
   .portfolio-first-list {
     margin-left: 327px;
+
+    @media screen and (max-width: 767px) {
+      margin-left: 0;
+    }
+
   }
 
   .portfolio-secound-list {
     width: 1170px;
-    height: 1288px;
+    /* height: 1288px; */
+
+    @media screen and (max-width: 767px) {
+      width: 100%;
+    }
   
   }
