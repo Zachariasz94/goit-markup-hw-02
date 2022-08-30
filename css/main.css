@@ -731,7 +731,6 @@ button:focus {
 @media screen and (max-width: 767px) {
   .footer__join-to-as {
     text-align: center;
-    margin-top: 60px;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
