@@ -26,14 +26,19 @@
       margin-left: 0;
     }
 
+    @media screen and (min-width: 768px) and (max-width:1199px) {
+      margin-left: 0;
+    }
+
   }
 
   .portfolio-secound-list {
     width: 1170px;
-    /* height: 1288px; */
+    margin-bottom: 94px;
 
     @media screen and (max-width: 767px) {
       width: 100%;
+      margin-bottom: 0;
     }
   
   }
