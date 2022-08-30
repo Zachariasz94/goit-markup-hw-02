@@ -52,7 +52,7 @@
 
         @media screen and (max-width: 767px) {
           width: 450px;
-          height: 622px;
+          height: auto;
         }
 
         @media screen and (min-width: 1200px) {
@@ -136,10 +136,12 @@
 
       &__img {
         width: 100%;
+        height: auto;
       }
       
       &__img-html {
         width: 100%;
+        height: auto;
       }
     }
   }

@@ -1431,7 +1431,7 @@ button:focus {
 @media screen and (max-width: 767px) {
   .our-team__list-item {
     width: 450px;
-    height: 622px;
+    height: auto;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1502,9 +1502,11 @@ button:focus {
   }
   .our-team .our-team__img {
     width: 100%;
+    height: auto;
   }
   .our-team .our-team__img-html {
     width: 100%;
+    height: auto;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
