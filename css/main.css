@@ -1647,6 +1647,11 @@ button:focus {
     width: 100%;
   }
 }
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .content {
+    width: 100%;
+  }
+}
 
 .portfolio {
   /* height: 1360px; */
@@ -1657,6 +1662,11 @@ button:focus {
     width: 100%;
     padding-top: 60px;
     padding-bottom: 60px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .portfolio {
+    width: 100%;
   }
 }
 
@@ -1682,6 +1692,11 @@ button:focus {
   .portfolio-secound-list {
     width: 100%;
     margin-bottom: 0;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .portfolio-secound-list {
+    width: 100%;
   }
 }
 
